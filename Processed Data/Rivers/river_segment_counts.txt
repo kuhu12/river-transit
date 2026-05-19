@@ -1,0 +1,39 @@
+River Segment Counts
+========================================
+
+Ganga               :  495 segments
+Yamuna              :  231 segments
+Chambal             :  226 segments
+Sharda              :  126 segments
+Ghaghara            :  102 segments
+Gandak              :   93 segments
+Betwa               :   77 segments
+Son                 :   67 segments
+Gomti               :   55 segments
+Sindh               :   51 segments
+Ken                 :   45 segments
+Kali Sindh          :   41 segments
+Tons                :   37 segments
+Burhi Gandak        :   29 segments
+Rihand              :   29 segments
+North Koel          :   23 segments
+Karmanasa           :   19 segments
+Alaknanda           :   16 segments
+Bagmati             :   15 segments
+Punpun              :   13 segments
+Bhagirathi          :   11 segments
+Mahananda           :   11 segments
+Gaula               :   11 segments
+Gerua               :   11 segments
+Rapti               :    9 segments
+Kamala              :    9 segments
+Kosi                :    7 segments
+Rohini              :    7 segments
+Mandakini           :    5 segments
+Sarju               :    5 segments
+Hindon              :    5 segments
+Ramganga            :    3 segments
+Mechi               :    3 segments
+
+----------------------------------------
+Total               : 1887 segments across 33 rivers

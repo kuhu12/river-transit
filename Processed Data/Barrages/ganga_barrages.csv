@@ -1,0 +1,15 @@
+name,river_name,seg_id,latitude,longitude,year_built,purpose
+Bhimgoda Barrage,Ganga,3918,29.9457,78.1642,1854,Canal headworks
+Bijnor Barrage,Ganga,3928,29.3667,78.1333,1984,Irrigation diversion
+Narora Barrage,Ganga,3897,28.1833,78.3833,1926,Irrigation + nuclear
+Farakka Barrage,Ganga,2959,24.8167,87.9167,1975,Navigation + irrigation
+Tajewala Barrage,Yamuna,3289,30.2833,77.5833,1873,Canal headworks
+Okhla Barrage,Yamuna,3264,28.5333,77.3,1874,Irrigation
+Matatila Barrage,Betwa,4159,25.0972,78.3725,1964,Irrigation
+Parichha Barrage,Betwa,3457,25.5167,78.7792,1967,Irrigation
+Rajghat Barrage,Betwa,4153,24.7,79.15,1978,Irrigation
+Kosi Barrage,Kosi,4815,26.5333,87.15,1963,Flood control
+Gandak Barrage,Gandak,5125,27.0,84.4333,1970,Irrigation
+Sarda Barrage,Sharda,4783,28.3833,80.75,1928,Canal headworks
+Kanpur Barrage,Ganga,3819,26.45,80.35,1964,Irrigation
+Bansagar Barrage,Son,4374,24.1894,81.2865,1978,Irrigation

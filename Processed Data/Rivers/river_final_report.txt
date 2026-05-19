@@ -1,0 +1,103 @@
+============================================================
+RIVER FILTERING REPORT
+============================================================
+
+Input file: /Users/kuhu.gupta/VizChitra/Processed Data/river_outlet_lookup.csv
+Original river count: 255
+
+------------------------------------------------------------
+STEP 1: DUPLICATE RESOLUTION
+------------------------------------------------------------
+Duplicates remapped: 21
+Details:
+  Ganges -> Ganga (1 rows)
+  Koshi River -> Kosi (1 rows)
+  Gomati -> Gomti (1 rows)
+  Gomtī -> Gomti (1 rows)
+  Kamla River -> Kamala (1 rows)
+  Gambhiri -> Gambhir (1 rows)
+  Gambhir;Parbati -> Gambhir (1 rows)
+  Mahakali River -> Sharda (1 rows)
+  Sipra -> Shipra (1 rows)
+  Narayani -> Gandak (1 rows)
+  Ghaghara River -> Ghaghara (1 rows)
+  Chambal River -> Chambal (1 rows)
+  Mahananda River -> Mahananda (1 rows)
+  Kuno River -> Kuno (1 rows)
+  North Koel River -> North Koel (1 rows)
+  Gaula River -> Gaula (1 rows)
+  Kamala River -> Kamala (1 rows)
+  Bhagirathi River -> Bhagirathi (1 rows)
+  Alaknanda River -> Alaknanda (1 rows)
+  Hindon River -> Hindon (1 rows)
+  Mechi River -> Mechi (1 rows)
+
+------------------------------------------------------------
+STEP 2: GARBAGE REMOVAL
+------------------------------------------------------------
+Garbage entries removed: 7
+Details:
+  Mungeshpur Drain (seg_id: 3278)
+  Gambhir (seg_id: 3382)
+  Bhain Ka Nala (seg_id: 3409)
+  mAU nALA (seg_id: 3593)
+  Jashma Nala (seg_id: 3728)
+  Kādhu Nadi (seg_id: 3994)
+  布抄老曲 (seg_id: 5256)
+
+------------------------------------------------------------
+STEP 3: TARGET RIVER FILTERING
+------------------------------------------------------------
+Target rivers requested: 33
+Target rivers found: 33
+Target rivers missing: 0
+
+FOUND RIVERS:
+  Tier 1 (Main Stem):
+    - Ganga (seg_id: 2959)
+  Tier 2 (Himalayan Headstreams):
+    - Alaknanda (seg_id: 4212)
+    - Bhagirathi (seg_id: 4203)
+    - Mandakini (seg_id: 4211)
+  Tier 3 (Left Bank Major Tributaries):
+    - Burhi Gandak (seg_id: 4901)
+    - Gandak (seg_id: 4577)
+    - Ghaghara (seg_id: 4401)
+    - Gomti (seg_id: 3932)
+    - Ramganga (seg_id: 3864)
+    - Rapti (seg_id: 4456)
+    - Sarju (seg_id: 4812)
+  Tier 4 (Left Bank Eastern Tributaries):
+    - Bagmati (seg_id: 4880)
+    - Kamala (seg_id: 4934)
+    - Kosi (seg_id: 3872)
+    - Mahananda (seg_id: 5081)
+    - Mechi (seg_id: 4846)
+  Tier 5 (Right Bank Major Tributaries):
+    - Betwa (seg_id: 4121)
+    - Chambal (seg_id: 3336)
+    - Ken (seg_id: 4281)
+    - Son (seg_id: 4341)
+    - Tons (seg_id: 4067)
+    - Yamuna (seg_id: 4254)
+  Tier 6 (Right Bank Secondary Rivers):
+    - Hindon (seg_id: 3559)
+    - Kali Sindh (seg_id: 3627)
+    - Karmanasa (seg_id: 3962)
+    - North Koel (seg_id: 4565)
+    - Punpun (seg_id: 5170)
+    - Sharda (seg_id: 4777)
+    - Sindh (seg_id: 3390)
+  Tier 7 (Additional Significant Rivers):
+    - Gaula (seg_id: 3861)
+    - Gerua (seg_id: 5111)
+    - Rihand (seg_id: 4340)
+    - Rohini (seg_id: 4448)
+
+------------------------------------------------------------
+FINAL OUTPUT
+------------------------------------------------------------
+Final river count: 33
+Output file: /Users/kuhu.gupta/VizChitra/Processed Data/river_final_lookup.csv
+
+============================================================
