@@ -45,6 +45,8 @@ function SchematicMap({ basin }: SchematicMapProps) {
   const [streamflowError, setStreamflowError] = useState<string | null>(null)
   const [streamflowLoading, setStreamflowLoading] = useState<boolean>(false)
   const [selectedYear, setSelectedYear] = useState<number>(2022)
+  const [straightLines, setStraightLines] = useState<boolean>(true)
+  const [logScale, setLogScale] = useState<boolean>(true)
 
   useEffect(() => {
     if (!geoJsonPath) {
@@ -156,10 +158,9 @@ function SchematicMap({ basin }: SchematicMapProps) {
     return parseAllStreamflowByYear(streamflowCsv)
   }, [streamflowCsv])
 
-  // Paths are static — only recompute when features change
   const baseLines: SchematicLine[] = useMemo(
-    () => buildSchematicLines(riverFeatures, 760),
-    [riverFeatures],
+    () => buildSchematicLines(riverFeatures, 760, undefined, straightLines),
+    [riverFeatures, straightLines],
   )
 
   // Defer the year fed to canvas so the slider thumb updates immediately
@@ -167,8 +168,8 @@ function SchematicMap({ basin }: SchematicMapProps) {
 
   // Only re-run the cheap width-application when deferred year changes
   const schematicLines: SchematicLine[] = useMemo(
-    () => applyFlowWidths(baseLines, allFlowData?.byYear.get(deferredYear), allFlowData?.globalMinFlow ?? 0, allFlowData?.globalMaxFlow ?? 0),
-    [baseLines, allFlowData, deferredYear],
+    () => applyFlowWidths(baseLines, allFlowData?.byYear.get(deferredYear), allFlowData?.globalMinFlow ?? 0, allFlowData?.globalMaxFlow ?? 0, logScale),
+    [baseLines, allFlowData, deferredYear, logScale],
   )
 
   const schematicConfluences = useMemo(() => {
@@ -188,7 +189,16 @@ function SchematicMap({ basin }: SchematicMapProps) {
           Basin: <strong>{basin}</strong>
         </p>
       </header>
-
+      <div style={{ display: 'flex', gap: 20 }}>
+        <label style={{ display: 'flex', alignItems: 'center', gap: 8, userSelect: 'none' }}>
+          <input type="checkbox" checked={straightLines} onChange={(e) => setStraightLines(e.target.checked)} />
+          Schematic (straight lines)
+        </label>
+        <label style={{ display: 'flex', alignItems: 'center', gap: 8, userSelect: 'none' }}>
+          <input type="checkbox" checked={logScale} onChange={(e) => setLogScale(e.target.checked)} />
+          Log scale
+        </label>
+      </div>
       {loading && <p>Loading schematic river data…</p>}
       {error && <p style={{ color: 'crimson' }}>{error}</p>}
       {confluenceLoading && <p>Loading confluence data…</p>}

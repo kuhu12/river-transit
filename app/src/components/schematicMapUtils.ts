@@ -199,20 +199,21 @@ export function applyFlowWidths(
   flowMap: Map<string, number> | undefined,
   globalMinFlow: number,
   globalMaxFlow: number,
+  logScale = true,
 ): SchematicLine[] {
   if (!flowMap) return lines.map((l) => ({ ...l, strokeWidth: undefined }))
 
-  // Log scale so small tributaries still show meaningful variation.
-  // Min/max are global across all years so the scale is stable while scrubbing.
   const FLOW_MIN_PX = 0.5
   const FLOW_MAX_PX = 10
-  const logMin = Math.log(Math.max(globalMinFlow, 1e-9))
-  const logMax = Math.log(Math.max(globalMaxFlow, 1e-9))
+
+  const scale = (v: number) => logScale ? Math.log(Math.max(v, 1e-9)) : v
+  const scaleMin = scale(globalMinFlow)
+  const scaleMax = scale(globalMaxFlow)
 
   return lines.map((line) => {
     const flow = flowMap.get(line.id)
     if (!Number.isFinite(flow)) return { ...line, strokeWidth: undefined }
-    const norm = logMin === logMax ? 0.5 : (Math.log(Math.max(flow!, 1e-9)) - logMin) / (logMax - logMin)
+    const norm = scaleMin === scaleMax ? 0.5 : (scale(flow!) - scaleMin) / (scaleMax - scaleMin)
     return { ...line, strokeWidth: clamp(FLOW_MIN_PX + norm * (FLOW_MAX_PX - FLOW_MIN_PX), FLOW_MIN_PX, FLOW_MAX_PX) }
   })
 }
@@ -261,6 +262,7 @@ export function buildSchematicLines(
   features: ParsedRiverFeature[],
   width = 760,
   flowMap?: Map<string, number>,
+  straightLines = true,
 ): SchematicLine[] {
   if (features.length === 0) {
     return []
@@ -287,24 +289,32 @@ export function buildSchematicLines(
   const FLOW_MIN_PX = 1
   const FLOW_MAX_PX = 12
 
+  const project = ([lon, lat]: [number, number]): Point => ({
+    x: clamp(normalize(lon, bounds.minLon, bounds.maxLon) * width, 0, width),
+    y: clamp((1 - normalize(lat, bounds.minLat, bounds.maxLat)) * height, 0, height),
+  })
+
   return features.map((feature) => {
-    const pathPoints: Point[] = feature.geometry.coordinates.map(([lon, lat]) => {
-      const x = clamp(normalize(lon, bounds.minLon, bounds.maxLon) * width, 0, width)
-      const y = clamp((1 - normalize(lat, bounds.minLat, bounds.maxLat)) * height, 0, height)
-      return { x, y }
-    })
+    const coords = feature.geometry.coordinates
+    const start = project(coords[0])
+    const end = project(coords[coords.length - 1])
 
-    const d = pathPoints.reduce((acc, point, index) => {
-      const command = index === 0 ? 'M' : 'L'
-      return `${acc} ${command} ${point.x.toFixed(2)} ${point.y.toFixed(2)}`
-    }, '')
+    let d: string
+    let labelPosition: Point
+    let ticks: SchematicTick[]
 
-    const labelPosition = pathPoints[Math.floor(pathPoints.length / 2)]
-    const ticks = pathPoints.filter((_, index) => index % Math.max(1, Math.floor(pathPoints.length / 10)) === 0).map((point, index) => ({
-      id: `${feature.id}-${index}`,
-      x: point.x,
-      y: point.y,
-    }))
+    if (straightLines) {
+      d = `M ${start.x.toFixed(2)} ${start.y.toFixed(2)} L ${end.x.toFixed(2)} ${end.y.toFixed(2)}`
+      labelPosition = { x: (start.x + end.x) / 2, y: (start.y + end.y) / 2 }
+      ticks = []
+    } else {
+      const pathPoints = coords.map(project)
+      d = pathPoints.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x.toFixed(2)} ${p.y.toFixed(2)}`).join(' ')
+      labelPosition = pathPoints[Math.floor(pathPoints.length / 2)]
+      ticks = pathPoints
+        .filter((_, i) => i % Math.max(1, Math.floor(pathPoints.length / 10)) === 0)
+        .map((p, i) => ({ id: `${feature.id}-${i}`, x: p.x, y: p.y }))
+    }
 
     let strokeWidth: number | undefined = undefined
     if (flowMap) {
