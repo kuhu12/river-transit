@@ -1,15 +1,18 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useDeferredValue, useMemo, useState } from 'react'
 import {
+  applyFlowWidths,
   buildSchematicLines,
   buildSchematicConfluences,
   getSchematicDimensions,
+  parseAllStreamflowByYear,
   parseConfluenceCsv,
   parseRiverFeatures,
-  parseStreamflowCsv,
+  type AllStreamflowData,
   type RiverFeatureCollection,
   type SchematicLine,
 } from './schematicMapUtils'
 import SchematicMapCanvas from './SchematicMapCanvas'
+import YearSlider from './YearSlider'
 
 const basinGeoJsonPaths: Record<string, string> = {
   ganga: '/ganga/river_geo.json',
@@ -41,6 +44,7 @@ function SchematicMap({ basin }: SchematicMapProps) {
   const [streamflowCsv, setStreamflowCsv] = useState<string | null>(null)
   const [streamflowError, setStreamflowError] = useState<string | null>(null)
   const [streamflowLoading, setStreamflowLoading] = useState<boolean>(false)
+  const [selectedYear, setSelectedYear] = useState<number>(2022)
 
   useEffect(() => {
     if (!geoJsonPath) {
@@ -146,14 +150,26 @@ function SchematicMap({ basin }: SchematicMapProps) {
     return getSchematicDimensions(riverFeatures, 760)
   }, [riverFeatures])
 
-  const schematicLines: SchematicLine[] = useMemo(() => {
-    let flowMap: Map<string, number> | undefined = undefined
-    if (streamflowCsv) {
-      flowMap = parseStreamflowCsv(streamflowCsv, 2022)
-    }
+  // Parse all years in one CSV scan — runs once per loaded CSV, not on every year change
+  const allFlowData: AllStreamflowData | null = useMemo(() => {
+    if (!streamflowCsv) return null
+    return parseAllStreamflowByYear(streamflowCsv)
+  }, [streamflowCsv])
 
-    return buildSchematicLines(riverFeatures, 760, flowMap)
-  }, [riverFeatures])
+  // Paths are static — only recompute when features change
+  const baseLines: SchematicLine[] = useMemo(
+    () => buildSchematicLines(riverFeatures, 760),
+    [riverFeatures],
+  )
+
+  // Defer the year fed to canvas so the slider thumb updates immediately
+  const deferredYear = useDeferredValue(selectedYear)
+
+  // Only re-run the cheap width-application when deferred year changes
+  const schematicLines: SchematicLine[] = useMemo(
+    () => applyFlowWidths(baseLines, allFlowData?.byYear.get(deferredYear), allFlowData?.globalMinFlow ?? 0, allFlowData?.globalMaxFlow ?? 0),
+    [baseLines, allFlowData, deferredYear],
+  )
 
   const schematicConfluences = useMemo(() => {
     if (!confluenceCsv || riverFeatures.length === 0) {
@@ -179,6 +195,9 @@ function SchematicMap({ basin }: SchematicMapProps) {
       {confluenceError && <p style={{ color: 'crimson' }}>{confluenceError}</p>}
       {streamflowLoading && <p>Loading streamflow data…</p>}
       {streamflowError && <p style={{ color: 'crimson' }}>{streamflowError}</p>}
+      {allFlowData && allFlowData.years.length > 1 && (
+        <YearSlider years={allFlowData.years} value={selectedYear} onChange={setSelectedYear} />
+      )}
       {!loading && !error && geoJson && (
         <SchematicMapCanvas
           lines={schematicLines}

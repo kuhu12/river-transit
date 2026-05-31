@@ -9,7 +9,7 @@ export type RiverLayerProps = {
 }
 
 function RiverLayer({ lines, width, height }: RiverLayerProps) {
-  console.log("Lines", lines)
+  // console.log("Lines", lines)
   return (
     <g>
       {lines.map((line) => (
@@ -22,6 +22,7 @@ function RiverLayer({ lines, width, height }: RiverLayerProps) {
             strokeWidth={line.strokeWidth ?? 4}
             strokeLinecap="round"
             strokeLinejoin="round"
+            // opacity={line.name === 'Ganga' ? 1 : 0}
           />
           {/* {line.labelPosition && (
             <text

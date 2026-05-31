@@ -136,33 +136,85 @@ export function parseConfluenceCsv(csv: string): ConfluenceRecord[] {
   })
 }
 
-export function parseStreamflowCsv(csv: string, year: number | string = 2022): Map<string, number> {
+export type AllStreamflowData = {
+  years: number[]
+  byYear: Map<number, Map<string, number>>
+  globalMinFlow: number
+  globalMaxFlow: number
+}
+
+export function parseAllStreamflowByYear(csv: string): AllStreamflowData {
   const rows = parseCsv(csv)
   const header = rows[0]?.map((cell) => cell.trim().toLowerCase())
 
-  const map = new Map<string, number>()
-  if (!header) return map
+  const byYear = new Map<number, Map<string, number>>()
+  if (!header) return { years: [], byYear, globalMinFlow: 0, globalMaxFlow: 0 }
 
-  const colSegment = header.find((h) => ['segment_id', 'seg_id', 'segmentid', 'segment'].includes(h))
-  const colYear = header.find((h) => ['year', 'yr'].includes(h))
-  const colFlow = header.find((h) => ['streamflow_m3s', 'streamflow', 'flow', 'discharge'].includes(h))
+  const colSegIdx = header.findIndex((h) => ['segment_id', 'seg_id', 'segmentid', 'segment'].includes(h))
+  const colYearIdx = header.findIndex((h) => ['year', 'yr'].includes(h))
+  const colDateIdx = header.findIndex((h) => h === 'date')
+  const colFlowIdx = header.findIndex((h) => ['streamflow_m3s', 'streamflow', 'flow', 'discharge'].includes(h))
+
+  let globalMinFlow = Number.POSITIVE_INFINITY
+  let globalMaxFlow = Number.NEGATIVE_INFINITY
 
   for (const row of rows.slice(1)) {
-    const values = Object.fromEntries(header.map((key, i) => [key, row[i] ?? '']))
-    const seg = (colSegment && values[colSegment]) || values['segment_id'] || values['seg_id'] || ''
-    const y = colYear ? Number(values[colYear]) : NaN
-    const flow = colFlow ? Number(values[colFlow]) : NaN
-    if (!seg) continue
-    if (!Number.isFinite(flow)) continue
-    if (colYear && Number(year) !== y) continue
+    const seg = colSegIdx >= 0 ? row[colSegIdx] : ''
+    const flow = colFlowIdx >= 0 ? Number(row[colFlowIdx]) : NaN
+    if (!seg || !Number.isFinite(flow)) continue
 
-    const existing = map.get(seg)
+    let rowYear: number = NaN
+    if (colYearIdx >= 0) {
+      rowYear = Number(row[colYearIdx])
+    } else if (colDateIdx >= 0) {
+      rowYear = Number(row[colDateIdx].substring(0, 4))
+    }
+    if (!Number.isFinite(rowYear)) continue
+
+    if (flow < globalMinFlow) globalMinFlow = flow
+    if (flow > globalMaxFlow) globalMaxFlow = flow
+
+    let yearMap = byYear.get(rowYear)
+    if (!yearMap) {
+      yearMap = new Map()
+      byYear.set(rowYear, yearMap)
+    }
+
+    const segKey = String(seg).substring(0, 4)
+    const existing = yearMap.get(segKey)
     if (existing == null || flow > existing) {
-      map.set(String(seg.substring(0, 4)), flow)
+      yearMap.set(segKey, flow)
     }
   }
 
-  return map
+  if (!Number.isFinite(globalMinFlow)) globalMinFlow = 0
+  if (!Number.isFinite(globalMaxFlow)) globalMaxFlow = 0
+
+  const years = Array.from(byYear.keys()).sort((a, b) => a - b)
+  return { years, byYear, globalMinFlow, globalMaxFlow }
+}
+
+export function applyFlowWidths(
+  lines: SchematicLine[],
+  flowMap: Map<string, number> | undefined,
+  globalMinFlow: number,
+  globalMaxFlow: number,
+): SchematicLine[] {
+  if (!flowMap) return lines.map((l) => ({ ...l, strokeWidth: undefined }))
+
+  // Log scale so small tributaries still show meaningful variation.
+  // Min/max are global across all years so the scale is stable while scrubbing.
+  const FLOW_MIN_PX = 0.5
+  const FLOW_MAX_PX = 10
+  const logMin = Math.log(Math.max(globalMinFlow, 1e-9))
+  const logMax = Math.log(Math.max(globalMaxFlow, 1e-9))
+
+  return lines.map((line) => {
+    const flow = flowMap.get(line.id)
+    if (!Number.isFinite(flow)) return { ...line, strokeWidth: undefined }
+    const norm = logMin === logMax ? 0.5 : (Math.log(Math.max(flow!, 1e-9)) - logMin) / (logMax - logMin)
+    return { ...line, strokeWidth: clamp(FLOW_MIN_PX + norm * (FLOW_MAX_PX - FLOW_MIN_PX), FLOW_MIN_PX, FLOW_MAX_PX) }
+  })
 }
 
 export function getSchematicDimensions(features: ParsedRiverFeature[], width = 760) {
@@ -233,7 +285,7 @@ export function buildSchematicLines(
   }
 
   const FLOW_MIN_PX = 1
-  const FLOW_MAX_PX = 20
+  const FLOW_MAX_PX = 12
 
   return features.map((feature) => {
     const pathPoints: Point[] = feature.geometry.coordinates.map(([lon, lat]) => {
