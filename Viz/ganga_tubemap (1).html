@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ganga River System — Tube Map</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0b0f1e;
+  font-family: 'Space Mono', monospace;
+  color: #8ab4c8;
+  overflow: hidden;
+}
+svg { display: block; cursor: grab; }
+svg:active { cursor: grabbing; }
+
+/* tube-map line styles */
+.line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.station-ring { fill: white; stroke: white; }
+.station-dot { }
+.station-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  fill: #c8e0f0;
+  cursor: pointer;
+  user-select: none;
+}
+.station-label:hover { fill: #ffffff; }
+
+.tooltip {
+  position: fixed;
+  background: rgba(5,15,35,0.95);
+  border: 1px solid #00e5ff;
+  color: #00e5ff;
+  padding: 8px 14px;
+  font-size: 11px;
+  letter-spacing: .12em;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+#title {
+  position: fixed;
+  top: 20px; left: 24px;
+  z-index: 10;
+  line-height: 1.5;
+}
+#title h1 {
+  font-size: 13px; font-weight: 700;
+  letter-spacing: .18em; color: #00e5ff;
+  text-transform: uppercase;
+}
+#title p {
+  font-size: 9px; letter-spacing: .12em;
+  color: #2a5a78; margin-top: 3px;
+}
+
+#legend {
+  position: fixed;
+  bottom: 16px; right: 20px;
+  font-size: 9px; letter-spacing: .1em;
+  color: #1a4a68; text-align: right;
+  line-height: 1.8;
+}
+
+#controls {
+  position: fixed;
+  top: 80px; left: 24px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ctrl-btn {
+  background: rgba(0,180,216,0.1);
+  border: 1px solid rgba(0,180,216,0.3);
+  color: #00b4d8;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  letter-spacing: .1em;
+  transition: background .15s;
+}
+.ctrl-btn:hover { background: rgba(0,180,216,0.25); }
+
+#info-panel {
+  position: fixed;
+  bottom: 16px; left: 24px;
+  font-size: 10px; letter-spacing: .1em;
+  color: #3a6a88;
+  line-height: 1.7;
+}
+</style>
+</head>
+<body>
+
+<div id="title">
+  <h1>GANGA RIVER SYSTEM</h1>
+  <p>CONFLUENCE STATIONS · D3 TUBE MAP · OCTILINEAR</p>
+</div>
+
+<div id="controls">
+  <button class="ctrl-btn" id="btn-zoom-in">+ ZOOM</button>
+  <button class="ctrl-btn" id="btn-zoom-out">− ZOOM</button>
+  <button class="ctrl-btn" id="btn-reset">RESET</button>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<div id="legend">
+  GANGA BASIN · 33 RIVERS · 31 CONFLUENCES<br>
+  SCROLL TO ZOOM · DRAG TO PAN
+</div>
+
+<div id="info-panel" id="info-panel">
+  HOVER A STATION OR LINE FOR DETAILS
+</div>
+
+<svg id="map"></svg>
+
+<script>
+const DATA = {"stations":{"Farakka":{"label":"Farakka","position":[178,84],"lat":24.7429,"lon":87.9362},"Devprayag":{"label":"Devprayag","position":[44,17],"lat":30.1446,"lon":78.5988},"Rudraprayag":{"label":"Rudraprayag","position":[50,15],"lat":30.2879,"lon":78.9796},"Supaul":{"label":"Supaul","position":[161,67],"lat":26.1158,"lon":86.7654},"Hajipur":{"label":"Hajipur","position":[138,73],"lat":25.6271,"lon":85.1846},"Chhapra":{"label":"Chhapra","position":[131,72],"lat":25.7438,"lon":84.6638},"Ghazipur":{"label":"Ghazipur","position":[115,75],"lat":25.4946,"lon":83.5179},"Kannauj":{"label":"Kannauj","position":[63,54],"lat":27.1512,"lon":79.9071},"Barhaj":{"label":"Barhaj","position":[107,61],"lat":26.6029,"lon":83.0237},"Ayodhya":{"label":"Ayodhya","position":[95,59],"lat":26.8104,"lon":82.1738},"Rosera":{"label":"Rosera","position":[148,68],"lat":26.0404,"lon":85.8829},"Kursela":{"label":"Kursela","position":[167,76],"lat":25.4412,"lon":87.2204},"Malda":{"label":"Malda","position":[182,82],"lat":24.9563,"lon":88.2304},"Siliguri":{"label":"Siliguri","position":[181,64],"lat":26.4121,"lon":88.1779},"Hamirpur":{"label":"Hamirpur","position":[68,70],"lat":25.9213,"lon":80.2313},"Etawah":{"label":"Etawah","position":[53,68],"lat":26.0483,"lon":79.2258},"Banda":{"label":"Banda","position":[71,73],"lat":25.6542,"lon":80.4875},"Koilwar":{"label":"Koilwar","position":[128,73],"lat":25.6575,"lon":84.4425},"Kalsi":{"label":"Kalsi","position":[33,12],"lat":30.5079,"lon":77.8196},"Prayagraj":{"label":"Prayagraj","position":[91,76],"lat":25.4204,"lon":81.8879},"Ghaziabad":{"label":"Ghaziabad","position":[30,37],"lat":28.5154,"lon":77.6317},"Anta":{"label":"Anta","position":[10,80],"lat":25.1246,"lon":76.1971},"Chandauli":{"label":"Chandauli","position":[118,76],"lat":25.3971,"lon":83.7854},"Medininagar":{"label":"Medininagar","position":[123,93],"lat":24.0771,"lon":84.1321},"Masaurhi":{"label":"Masaurhi","position":[138,75],"lat":25.4912,"lon":85.1929},"Lakhimpur":{"label":"Lakhimpur","position":[75,43],"lat":28.0875,"lon":80.7533},"Mainpuri":{"label":"Mainpuri","position":[52,64],"lat":26.4187,"lon":79.1571},"Kalagarh":{"label":"Kalagarh","position":[49,31],"lat":29.0317,"lon":78.9392},"Gopalganj":{"label":"Gopalganj","position":[126,63],"lat":26.4908,"lon":84.3058},"Singrauli":{"label":"Singrauli","position":[102,91],"lat":24.2329,"lon":82.6592},"Gorakhpur":{"label":"Gorakhpur","position":[112,58],"lat":26.8354,"lon":83.3221}},"lines":{"Alaknanda":{"color":"#023e8a","nodes":["Rudraprayag","Devprayag"]},"Bagmati":{"color":"#d62828","nodes":["Rosera"]},"Betwa":{"color":"#52b788","nodes":["Hamirpur"]},"Bhagirathi":{"color":"#0077b6","nodes":["Devprayag"]},"Burhi Gandak":{"color":"#aaa","nodes":["Supaul"]},"Chambal":{"color":"#81b29a","nodes":["Anta","Etawah"]},"Gandak":{"color":"#f15bb5","nodes":["Gopalganj","Hajipur"]},"Ganga":{"color":"#00b4d8","nodes":["Devprayag","Kannauj","Prayagraj","Ghazipur","Chandauli","Koilwar","Chhapra","Hajipur","Masaurhi","Rosera","Supaul","Kursela","Malda","Farakka"]},"Gaula":{"color":"#aaa","nodes":["Kalagarh"]},"Gerua":{"color":"#aaa","nodes":["Gopalganj"]},"Ghaghara":{"color":"#48cae4","nodes":["Lakhimpur","Ayodhya","Barhaj","Chhapra"]},"Gomti":{"color":"#f77f00","nodes":["Ghazipur"]},"Hindon":{"color":"#d8e2dc","nodes":["Ghaziabad"]},"Kali Sindh":{"color":"#aaa","nodes":["Anta"]},"Kamala":{"color":"#aaa","nodes":["Supaul"]},"Karmanasa":{"color":"#aaa","nodes":["Chandauli"]},"Ken":{"color":"#74c69d","nodes":["Banda"]},"Kosi":{"color":"#f2cc8f","nodes":["Supaul","Kursela"]},"Mahananda":{"color":"#00bbf9","nodes":["Siliguri","Malda"]},"Mandakini":{"color":"#aaa","nodes":["Rudraprayag"]},"Mechi":{"color":"#aaa","nodes":["Siliguri"]},"North Koel":{"color":"#aaa","nodes":["Medininagar"]},"Punpun":{"color":"#aaa","nodes":["Masaurhi"]},"Ramganga":{"color":"#9b5de5","nodes":["Kalagarh","Kannauj"]},"Rapti":{"color":"#fee440","nodes":["Gorakhpur","Barhaj"]},"Rihand":{"color":"#aaa","nodes":["Singrauli"]},"Rohini":{"color":"#aaa","nodes":["Gorakhpur"]},"Sarju":{"color":"#eae2b7","nodes":["Ayodhya"]},"Sharda":{"color":"#fcbf49","nodes":["Lakhimpur"]},"Sindh":{"color":"#aaa","nodes":["Mainpuri"]},"Son":{"color":"#e07a5f","nodes":["Singrauli","Medininagar","Koilwar"]},"Tons":{"color":"#b7e4c7","nodes":["Kalsi"]},"Yamuna":{"color":"#90e0ef","nodes":["Ghaziabad","Kalsi","Mainpuri","Etawah","Hamirpur","Banda","Prayagraj"]}}};
+
+// ─── Layout ────────────────────────────────────────────────────
+const W = window.innerWidth, H = window.innerHeight;
+const svg = d3.select("#map").attr("width", W).attr("height", H);
+
+// Defs: glow
+const defs = svg.append("defs");
+const glow = defs.append("filter").attr("id","glow")
+  .attr("x","-40%").attr("y","-40%").attr("width","180%").attr("height","180%");
+glow.append("feGaussianBlur").attr("in","SourceGraphic").attr("stdDeviation","3").attr("result","blur");
+const gm = glow.append("feMerge");
+gm.append("feMergeNode").attr("in","blur");
+gm.append("feMergeNode").attr("in","SourceGraphic");
+
+const glowHi = defs.append("filter").attr("id","glow-hi")
+  .attr("x","-60%").attr("y","-60%").attr("width","220%").attr("height","220%");
+glowHi.append("feGaussianBlur").attr("in","SourceGraphic").attr("stdDeviation","6").attr("result","blur");
+const gm2 = glowHi.append("feMerge");
+gm2.append("feMergeNode").attr("in","blur");
+gm2.append("feMergeNode").attr("in","SourceGraphic");
+
+// ─── Grid → Screen mapping ─────────────────────────────────────
+const stations = DATA.stations;
+const lines = DATA.lines;
+
+// All grid positions
+const allX = Object.values(stations).map(s => s.position[0]);
+const allY = Object.values(stations).map(s => s.position[1]);
+const gxMin = d3.min(allX), gxMax = d3.max(allX);
+const gyMin = d3.min(allY), gyMax = d3.max(allY);
+
+const PAD = 120;
+const CELL = Math.min(
+  (W - PAD*2) / (gxMax - gxMin),
+  (H - PAD*2) / (gyMax - gyMin)
+) * 0.88;
+
+function gx(gv) { return PAD + (gv - gxMin) * CELL; }
+function gy(gv) { return PAD + (gv - gyMin) * CELL; }
+
+// ─── Octilinear path builder ────────────────────────────────────
+// Given two [sx,sy] screen points, generate an octilinear SVG path segment
+function octiSeg(x1,y1,x2,y2) {
+  const dx = x2-x1, dy = y2-y1;
+  const adx = Math.abs(dx), ady = Math.abs(dy);
+  const sx = Math.sign(dx), sy = Math.sign(dy);
+  let mx, my;
+  if (adx >= ady) {
+    // horizontal dominates: diagonal first
+    mx = x1 + sx*ady; my = y2;
+  } else {
+    // vertical dominates: diagonal first
+    mx = x2; my = y1 + sy*adx;
+  }
+  // if midpoint == start or == end, skip it
+  const eps = 0.5;
+  if (Math.abs(mx-x1)<eps && Math.abs(my-y1)<eps) return `L${x2.toFixed(1)},${y2.toFixed(1)}`;
+  if (Math.abs(mx-x2)<eps && Math.abs(my-y2)<eps) return `L${x2.toFixed(1)},${y2.toFixed(1)}`;
+  return `L${mx.toFixed(1)},${my.toFixed(1)}L${x2.toFixed(1)},${y2.toFixed(1)}`;
+}
+
+function buildPath(nodeNames) {
+  if (!nodeNames || nodeNames.length < 2) return null;
+  const pts = nodeNames
+    .filter(n => stations[n])
+    .map(n => [gx(stations[n].position[0]), gy(stations[n].position[1])]);
+  if (pts.length < 2) return null;
+  let d = `M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+  for (let i = 1; i < pts.length; i++) {
+    d += octiSeg(pts[i-1][0], pts[i-1][1], pts[i][0], pts[i][1]);
+  }
+  return d;
+}
+
+// ─── Zoom & Pan ────────────────────────────────────────────────
+const mainG = svg.append("g");
+const zoom = d3.zoom().scaleExtent([0.3, 8]).on("zoom", e => {
+  mainG.attr("transform", e.transform);
+});
+svg.call(zoom);
+
+// ─── Draw lines ────────────────────────────────────────────────
+const tooltip = document.getElementById("tooltip");
+const infoPanel = document.getElementById("info-panel");
+
+// Line thickness by "importance" (node count)
+const nodeCountScale = d3.scaleLinear()
+  .domain([1, 14]).range([1.5, 5]).clamp(true);
+
+const lineG = mainG.append("g").attr("class","lines");
+
+// Draw each line
+const lineElems = {};
+for (const [name, line] of Object.entries(lines)) {
+  if (!line.nodes || line.nodes.length < 2) continue;
+  const d = buildPath(line.nodes);
+  if (!d) continue;
+  const w = nodeCountScale(line.nodes.length);
+  const el = lineG.append("path")
+    .attr("class","line")
+    .attr("d", d)
+    .attr("stroke", line.color)
+    .attr("stroke-width", w)
+    .attr("opacity", 0.75)
+    .attr("filter","url(#glow)")
+    .style("cursor","pointer")
+    .on("mouseover", function(event) {
+      d3.select(this).attr("stroke-width", w*2).attr("opacity",1).attr("filter","url(#glow-hi)");
+      tooltip.style.opacity = 1;
+      tooltip.style.left = (event.clientX+14)+"px";
+      tooltip.style.top = (event.clientY-10)+"px";
+      tooltip.textContent = `${name.toUpperCase()} → ${Object.values(lines).find(l=>l===line) ? '' : ''}${lines[name].nodes.join(" · ")}`;
+      infoPanel.innerHTML = `<span style="color:${line.color}">${name.toUpperCase()}</span><br>` +
+        `STATIONS: ${line.nodes.length} · FLOWS INTO: ${findMouth(name)}`;
+    })
+    .on("mousemove", function(event) {
+      tooltip.style.left = (event.clientX+14)+"px";
+      tooltip.style.top = (event.clientY-10)+"px";
+    })
+    .on("mouseout", function() {
+      d3.select(this).attr("stroke-width", w).attr("opacity",0.75).attr("filter","url(#glow)");
+      tooltip.style.opacity = 0;
+      infoPanel.textContent = "HOVER A STATION OR LINE FOR DETAILS";
+    });
+  lineElems[name] = el;
+}
+
+function findMouth(river) {
+  // Find what this river flows into from original data
+  const entry = Object.values(DATA.stations).find(s => s.label === DATA.stations[DATA.lines[river]?.nodes?.slice(-1)[0]]?.label);
+  // Simpler: look up from source data embedded
+  const src = CONFLUENCE_META[river];
+  return src ? src.into : "—";
+}
+
+// ─── Draw stations ─────────────────────────────────────────────
+// Which stations are interchanges (multiple lines pass through)?
+const stationLines = {};
+for (const [name, line] of Object.entries(lines)) {
+  for (const node of (line.nodes||[])) {
+    if (!stationLines[node]) stationLines[node] = [];
+    stationLines[node].push({name, color: line.color});
+  }
+}
+
+const stationG = mainG.append("g").attr("class","stations");
+
+for (const [place, info] of Object.entries(stations)) {
+  const sx = gx(info.position[0]);
+  const sy = gy(info.position[1]);
+  const myLines = stationLines[place] || [];
+  const isInterchange = myLines.length > 2;
+  const R = isInterchange ? 7 : 5;
+
+  const g = stationG.append("g")
+    .style("cursor","pointer")
+    .on("mouseover", function(event) {
+      tooltip.style.opacity = 1;
+      tooltip.style.left = (event.clientX+14)+"px";
+      tooltip.style.top = (event.clientY-10)+"px";
+      tooltip.textContent = `${place.toUpperCase()} · ${info.lat.toFixed(3)}°N ${info.lon.toFixed(3)}°E`;
+      infoPanel.innerHTML = `<span style="color:#00e5ff">${place.toUpperCase()}</span><br>` +
+        `RIVERS: ${myLines.map(l=>`<span style="color:${l.color}">${l.name}</span>`).join(', ')}<br>` +
+        `COORDS: ${info.lat.toFixed(4)}°N, ${info.lon.toFixed(4)}°E`;
+    })
+    .on("mousemove", function(event) {
+      tooltip.style.left = (event.clientX+14)+"px";
+      tooltip.style.top = (event.clientY-10)+"px";
+    })
+    .on("mouseout", function() {
+      tooltip.style.opacity = 0;
+      infoPanel.textContent = "HOVER A STATION OR LINE FOR DETAILS";
+    });
+
+  // white ring
+  g.append("circle")
+    .attr("cx", sx).attr("cy", sy)
+    .attr("r", R+1.5)
+    .attr("fill","none")
+    .attr("stroke","white")
+    .attr("stroke-width", isInterchange ? 2 : 1.5)
+    .attr("opacity", 0.9);
+
+  // colored center dot
+  const dotColor = myLines.length > 0 ? myLines[0].color : "#888";
+  g.append("circle")
+    .attr("cx", sx).attr("cy", sy)
+    .attr("r", R)
+    .attr("fill", isInterchange ? "#ffffff" : dotColor)
+    .attr("opacity", isInterchange ? 0.95 : 0.85);
+
+  // label — place on the less-crowded side
+  const labelX = sx + (info.position[0] > (gxMin+gxMax)/2 ? -(R+4) : (R+4));
+  const anchor = info.position[0] > (gxMin+gxMax)/2 ? "end" : "start";
+
+  g.append("text")
+    .attr("class","station-label")
+    .attr("x", labelX)
+    .attr("y", sy - (R+3))
+    .attr("text-anchor", anchor)
+    .attr("font-size", isInterchange ? "12px" : "10px")
+    .attr("fill", isInterchange ? "#ffffff" : "#9abccc")
+    .attr("font-weight", isInterchange ? "700" : "400")
+    .text(place);
+}
+
+// ─── Legend panel ──────────────────────────────────────────────
+const MAJOR_RIVERS = ["Ganga","Yamuna","Ghaghara","Son","Kosi","Chambal","Ramganga","Gandak","Ghaghara","Rapti","Mahananda","Bhagirathi","Alaknanda"];
+const legendG = mainG.append("g").attr("transform",`translate(${gx(gxMax)+30},${gy(gyMin)})`);
+
+let ly = 0;
+legendG.append("text")
+  .attr("y", ly).attr("font-family","Space Mono,monospace")
+  .attr("font-size","9px").attr("fill","#2a5a78")
+  .attr("letter-spacing","0.12em")
+  .text("RIVER LINES");
+ly += 18;
+
+for (const [name, line] of Object.entries(lines)) {
+  if (!line.color || line.color === "#aaa") continue;
+  const row = legendG.append("g").attr("transform",`translate(0,${ly})`).style("cursor","pointer")
+    .on("mouseover", () => {
+      if (lineElems[name]) {
+        const w = nodeCountScale(line.nodes.length);
+        lineElems[name].attr("stroke-width", w*2).attr("opacity",1).attr("filter","url(#glow-hi)");
+      }
+    })
+    .on("mouseout", () => {
+      if (lineElems[name]) {
+        const w = nodeCountScale(line.nodes.length);
+        lineElems[name].attr("stroke-width", w).attr("opacity",0.75).attr("filter","url(#glow)");
+      }
+    });
+  row.append("line").attr("x1",0).attr("y1",0).attr("x2",20).attr("y2",0)
+    .attr("stroke",line.color).attr("stroke-width",3).attr("stroke-linecap","round");
+  row.append("text")
+    .attr("x",26).attr("y",4)
+    .attr("font-family","Space Mono,monospace")
+    .attr("font-size","9px").attr("fill","#6a9ab0")
+    .attr("letter-spacing","0.08em")
+    .text(name);
+  ly += 14;
+}
+
+// ─── Zoom controls ─────────────────────────────────────────────
+d3.select("#btn-zoom-in").on("click", () => {
+  svg.transition().duration(300).call(zoom.scaleBy, 1.5);
+});
+d3.select("#btn-zoom-out").on("click", () => {
+  svg.transition().duration(300).call(zoom.scaleBy, 0.67);
+});
+d3.select("#btn-reset").on("click", () => {
+  svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity);
+});
+
+// ─── Confluence meta lookup ─────────────────────────────────────
+const CONFLUENCE_META = {"Ganga":{"into":"Bay of Bengal","place":"Farakka"},"Alaknanda":{"into":"Bhagirathi","place":"Devprayag"},"Bhagirathi":{"into":"Ganga","place":"Devprayag"},"Mandakini":{"into":"Alaknanda","place":"Rudraprayag"},"Burhi Gandak":{"into":"Ganga","place":"Supaul"},"Gandak":{"into":"Ganga","place":"Hajipur"},"Ghaghara":{"into":"Ganga","place":"Chhapra"},"Gomti":{"into":"Ganga","place":"Ghazipur"},"Ramganga":{"into":"Ganga","place":"Kannauj"},"Rapti":{"into":"Ghaghara","place":"Barhaj"},"Sarju":{"into":"Ghaghara","place":"Ayodhya"},"Bagmati":{"into":"Ganga","place":"Rosera"},"Kamala":{"into":"Kosi","place":"Supaul"},"Kosi":{"into":"Ganga","place":"Kursela"},"Mahananda":{"into":"Ganga","place":"Malda"},"Mechi":{"into":"Mahananda","place":"Siliguri"},"Betwa":{"into":"Yamuna","place":"Hamirpur"},"Chambal":{"into":"Yamuna","place":"Etawah"},"Ken":{"into":"Yamuna","place":"Banda"},"Son":{"into":"Ganga","place":"Koilwar"},"Tons":{"into":"Yamuna","place":"Kalsi"},"Yamuna":{"into":"Ganga","place":"Prayagraj"},"Hindon":{"into":"Yamuna","place":"Ghaziabad"},"Kali Sindh":{"into":"Chambal","place":"Anta"},"Karmanasa":{"into":"Ganga","place":"Chandauli"},"North Koel":{"into":"Son","place":"Medininagar"},"Punpun":{"into":"Ganga","place":"Masaurhi"},"Sharda":{"into":"Ghaghara","place":"Lakhimpur"},"Sindh":{"into":"Yamuna","place":"Mainpuri"},"Gaula":{"into":"Ramganga","place":"Kalagarh"},"Gerua":{"into":"Gandak","place":"Gopalganj"},"Rihand":{"into":"Son","place":"Singrauli"},"Rohini":{"into":"Rapti","place":"Gorakhpur"}};
+</script>
+</body>
+</html>
