@@ -1,0 +1,783 @@
+dam_name,dam_lat,dam_lon,state,local_river,capacity_mcm,YearOfCompletion,YearSource,assigned_seg_id,assigned_river,match_method,snap_dist_km
+Kharagpur Lake Dam,25.1358,86.525,Bihar,Mani,16.51,1876.0,Wikipedia,5100.0,Ganga,tier3_nearest,6.56
+Nagi Dam,24.8208,86.3997,Bihar,Nagi,10.8,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",5136.0,Ulai,tier3_nearest,9.5
+Kohira Dam,24.9808,83.4908,Bihar,Kohira,28.33,1962.0,"NRLD_2019 (score=0.60, method=first_word_match)",3967.0,Karmanasa,tier3_nearest,21.41
+Amrity Dam,24.8892,86.1022,Bihar,Amrity,4.92,1965.0,"NRLD_2019 (score=0.60, method=first_word_match)",5134.0,Kiul,tier3_nearest,7.67
+Badua Dam,24.8878,86.6458,Bihar,Badua,128.34,1965.0,"NRLD_2019 (score=0.60, method=first_word_match)",5100.0,Ganga,tier3_nearest,13.81
+Srikhandi Dam,24.8925,86.09,Bihar,Srikhandi,4.92,1965.0,"NRLD_2019 (score=0.60, method=first_word_match)",5134.0,Kiul,tier3_nearest,8.11
+Kolmahadeo Dam,24.7111,85.6617,Bihar,Kolmahadeo,5.7,1966.0,Wikipedia,5155.0,Sakri,tier3_nearest,8.27
+Chandan Dam,24.6756,86.9225,Bihar,Chandan,157.23,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",2977.0,Chandan,tier1_existing,0.374181
+Jalkund Dam,25.235,86.5358,Bihar,Jalkund,3.085,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",5100.0,Ganga,tier3_nearest,7.49
+Morway Dam,25.1325,86.2192,Bihar,Morway,14.57,1969.0,"NRLD_2019 (score=0.60, method=first_word_match)",5139.0,Kiul,tier3_nearest,8.14
+Satgharwa (N.F) Dam,24.7281,85.0131,Bihar,Satgharwa,1.83,1976.0,Wikipedia,4556.0,Lilajan,tier1_existing,0.07214999999999999
+Job Dam,24.68,85.5656,Bihar,Job,12.0,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",5146.0,Panchane,tier3_nearest,13.03
+Kailash Ghati Dam,24.8933,85.9256,Bihar,Kailash Ghati,3.571,1980.0,Wikipedia,5165.0,Harohar,tier3_nearest,15.01
+Nakti Dam,24.8531,86.4433,Bihar,Nakti,13.97,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",5136.0,Ulai,tier3_nearest,13.47
+Taracol (N.F) Dam,24.8361,85.9956,Bihar,Tarakol,1.049,1980.0,Wikipedia,5134.0,Kiul,tier3_nearest,7.79
+Baskund Dam,25.0683,86.2167,Bihar,Baskund,1.23,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",5139.0,Kiul,tier3_nearest,5.26
+Upper Badua (N.F) Dam,24.8872,86.6458,Bihar,Badua,4.52,1985.0,Wikipedia,5100.0,Ganga,tier3_nearest,13.87
+Belharna Dam,24.8528,86.5608,Bihar,Belharna,15.56,1987.0,"NRLD_2019 (score=0.60, method=first_word_match)",5100.0,Ganga,tier3_nearest,17.71
+Phulwaria Dam,24.5961,85.4928,Bihar,Tilaiya,59.34,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",5146.0,Panchane,tier3_nearest,13.56
+Anjan Dam,25.0339,86.2956,Bihar,Anjan,26.68,1989.0,"NRLD_2019 (score=0.60, method=first_word_match)",5137.0,Nakti,tier3_nearest,8.14
+Orhni Dam,24.8236,86.8122,Bihar,Orhni,51.56,2000.0,"NRLD_2019 (score=0.60, method=first_word_match)",5277.0,Chilkara,tier3_nearest,9.94
+Bilashi Dam,24.9339,86.8547,Bihar,Bilasi,32.57,2001.0,"NRLD_2019 (score=0.60, method=first_word_match)",5109.0,Chandan,tier3_nearest,6.33
+Upper Kiul Dam,24.8094,86.0711,Bihar,Kiul,98.103,2004.0,"NRLD_2019 (score=0.60, method=first_word_match)",5134.0,Kiul,tier1_existing,0.07214999999999999
+Barnar Dam,24.6236,86.3242,Bihar,Barnar,80.21,2005.0,Wikipedia,2978.0,Barnar,tier1_existing,0.018315
+Durgawati Dam,24.8461,83.7231,Bihar,Durgawati,287.7,2014.0,"NRLD_2019 (score=0.60, method=first_word_match)",3967.0,Karmanasa,tier1_existing,0.039293999999999996
+Sindhwarni Dam,25.1308,86.625,Bihar,Mani,50.06,,Not found,5100.0,Ganga,tier1_existing,1.435785
+Kharjir (Khajuri) Dam,23.9325,83.5075,Chhattisgarh,Local,15.13,1974.0,Wikipedia,4602.0,Kanhar,tier3_nearest,3.51
+Jagannathpur T. Dam,23.3706,83.1953,Chhattisgarh,Local,4.116,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,43.88
+Dhab Dam,24.0417,83.3822,Chhattisgarh,Local Nalla,0.155,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4602.0,Kanhar,tier3_nearest,5.07
+Khunal(Khunsi) T Dam,23.5531,83.2125,Chhattisgarh,Local,4.74,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,26.26
+Pathargawan Dam,23.4217,82.5944,Chhattisgarh,Local,1.03,2002.0,"NRLD_2019 (score=0.80, method=pic_srno_match)",,,unassigned,36.05
+Chhota Palgi T. Dam,23.1519,83.0997,Chhattisgarh,Local,0.297,2000.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,66.44
+Ramchandrapur T. Dam,23.9422,83.4931,Chhattisgarh,Local,1.028,1994.0,"NRLD_2019 (score=0.80, method=pic_srno_match)",4602.0,Kanhar,tier3_nearest,3.96
+Chandra Nagar T. Dam,23.9419,83.4931,Chhattisgarh,Local,3.414,,Not found,4602.0,Kanhar,tier3_nearest,3.97
+Parasrampur T. Dam,23.1194,83.2658,Chhattisgarh,Garasili,0.945,2004.0,"NRLD_2019 (score=0.80, method=pic_srno_match)",,,unassigned,49.62
+Barnai Reservior Dam,22.9008,83.1758,Chhattisgarh,Barnai,1.2,2005.0,"NRLD_2019 (score=0.80, method=pic_srno_match)",,,unassigned,69.55
+Batare Dam,24.4297,84.1861,Jharkhand,Batare,3.16,1954.0,"NRLD_2019 (score=0.60, method=first_word_match)",4543.0,Batane,tier3_nearest,7.24
+Baranadi Dam,24.1178,87.4003,Jharkhand,Baranadi,5.64,1967.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,70.84
+Kairabani Dam,24.1697,87.44,Jharkhand,Dararika,3.55,1967.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,64.99
+Temarain Dam,23.9981,84.0031,Jharkhand,Temarain,1.3,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",4597.0,Tahle,tier3_nearest,4.89
+Sunder Dam,24.9436,87.3908,Jharkhand,Sunder,30.89,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",2954.0,Gumani,tier3_nearest,18.06
+Dhankai Dam,24.2233,83.9564,Jharkhand,Dhankai,0.855,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",4600.0,Koel,tier3_nearest,6.49
+Left Banki Dam,24.2306,83.4772,Jharkhand,Left Banki,5.074,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",4602.0,Kanhar,tier3_nearest,16.69
+Chatania Ghat Dam,24.4508,83.5644,Jharkhand,Kuljhiri Nala,1.68,1984.0,Wikipedia,4612.0,Panda,tier1_existing,1.722831
+Buksa Dam,24.2628,85.1553,Jharkhand,Buksa,12.34,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",2807.0,Mohana,tier3_nearest,2.33
+Hiroo Dam,24.1492,84.9339,Jharkhand,Hiroo,6.232,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",5172.0,Lilajan,tier3_nearest,16.29
+Pandarwa Dam,24.3161,83.4292,Jharkhand,Pandarwa,3.814,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4612.0,Panda,tier3_nearest,17.87
+Butan-Duba Dam,23.9503,84.0864,Jharkhand,Butan-Duba,3.48,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",4596.0,Koel,tier3_nearest,2.81
+Chirka Dam,24.0083,83.6306,Jharkhand,Dhengura,6.172,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",4602.0,Kanhar,tier3_nearest,10.86
+Danro Dam,24.0271,83.5543,Jharkhand,Danro,17.219,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",4602.0,Kanhar,tier3_nearest,3.48
+Malay Dam,23.9186,84.2831,Jharkhand,North Koel,,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",4589.0,Auranga,tier3_nearest,5.0
+Anraj Dam,24.0653,84.8181,Jharkhand,Anraj,30.426,,Not found,4593.0,Amanat,tier3_nearest,6.63
+Babhani Khand Dam,24.3014,83.5136,Jharkhand,Banki,2.314,1987.0,Wikipedia,4604.0,Barhki,tier3_nearest,14.87
+Sudhari Nala Dam,24.3428,84.8786,Jharkhand,Sudhari Nala,1.38,,Not found,4556.0,Lilajan,tier3_nearest,7.77
+Amanat Dam,24.0075,84.5544,Jharkhand,Amanat,107.19,,Not found,4593.0,Amanat,tier1_existing,0.11255399999999999
+Burhi Dam,24.3572,86.5414,Jharkhand,Pathro,249.229,,Not found,,,unassigned,35.15
+Kanhar Dam,24.1228,83.2968,Jharkhand,Kanhar,574.0,1981.0,Wikipedia,4611.0,Kanhar,tier1_existing,0.013098
+Punasi Dam,24.4783,86.5356,Jharkhand,Ajay,149.8,,Not found,,,unassigned,25.57
+Tahlay Dam,24.0436,83.9578,Jharkhand,Tahlay,190.0,,Not found,4597.0,Tahle,tier1_existing,0.15173699999999998
+Torai Dam,24.6567,87.6172,Jharkhand,Torai,248.0,,Not found,2954.0,Gumani,tier3_nearest,18.09
+Batane Dam,24.4275,84.2603,Jharkhand,Batare,678.7,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4543.0,Batane,tier3_nearest,4.54
+North Koel Dam,24.6044,84.2869,Jharkhand,North Koel,702.0,,Not found,4543.0,Batane,tier1_existing,0.020313
+Tekanpur Dam,26.005,78.2869,Madhya Pradesh,Chhachhundar Nadi,8.293,1895.0,"NRLD_2019 (score=0.60, method=first_word_match)",3475.0,Non,tier3_nearest,17.46
+Sarra Dam,23.7458,80.4778,Madhya Pradesh,Katni,3.378,1896.0,"NRLD_2019 (score=0.60, method=first_word_match)",4300.0,Katni,tier3_nearest,13.87
+Jawahargarh Dam,26.1356,77.3083,Madhya Pradesh,Chamberi,3.823,1899.0,"NRLD_2019 (score=0.60, method=first_word_match)",3349.0,Kunwari,tier3_nearest,9.33
+Khanpura Dam,24.2322,77.0336,Madhya Pradesh,Local,4.27,1907.0,"NRLD_2019 (score=0.60, method=first_word_match)",3776.0,Parbati,tier3_nearest,9.23
+Dinora Dam,25.4558,78.32,Madhya Pradesh,Nanga Nala,2.05,1907.0,"NRLD_2019 (score=0.60, method=first_word_match)",3471.0,Bilrai,tier3_nearest,13.26
+Antalwasa Dam,23.33,75.2269,Madhya Pradesh,Local,5.83,1908.0,"NRLD_2019 (score=0.60, method=first_word_match)",3646.0,Maleni,tier3_nearest,10.82
+Lokpal Sagar Dam,24.7219,80.21,Madhya Pradesh,Ranj,6.34,1909.0,"NRLD_2019 (score=0.60, method=first_word_match)",4277.0,Ken,tier3_nearest,15.36
+Kamera Dam,26.2383,77.4369,Madhya Pradesh,Local,3.37,1910.0,"NRLD_2019 (score=0.60, method=first_word_match)",3349.0,Kunwari,tier3_nearest,10.05
+Jumnera Dam,23.7819,79.5789,Madhya Pradesh,Local,1.312,1910.0,"NRLD_2019 (score=0.60, method=first_word_match)",4289.0,Bearma,tier3_nearest,3.19
+Adner Dam,25.5456,78.0781,Madhya Pradesh,Sino,7.44,1911.0,"NRLD_2019 (score=0.60, method=first_word_match)",3472.0,Mahuar,tier3_nearest,8.12
+Nagdagajora Dam,25.1539,78.2103,Madhya Pradesh,Nagda Nadi,3.58,1911.0,"NRLD_2019 (score=0.60, method=first_word_match)",3478.0,Betwa,tier3_nearest,5.27
+Gorkha Bandha Dam,23.8553,80.1933,Madhya Pradesh,Local,1.25,1912.0,"NRLD_2019 (score=0.60, method=first_word_match)",4300.0,Katni,tier3_nearest,10.99
+Chiraipani Dam,23.9114,79.6139,Madhya Pradesh,Local,2.7,1913.0,"NRLD_2019 (score=0.60, method=first_word_match)",4290.0,Bearma,tier3_nearest,8.46
+Kheria Dam,25.4731,78.2586,Madhya Pradesh,Local,2.945,1913.0,"NRLD_2019 (score=0.60, method=first_word_match)",3471.0,Bilrai,tier3_nearest,7.15
+Pipreheta Dam,23.6961,80.2372,Madhya Pradesh,Local,2.87,1913.0,"NRLD_2019 (score=0.60, method=first_word_match)",4300.0,Katni,tier3_nearest,8.2
+Jhaloni Dam,24.9572,78.1375,Madhya Pradesh,Dhamvarsi Nala,3.864,1913.0,"NRLD_2019 (score=0.60, method=first_word_match)",4158.0,Betwa,tier3_nearest,9.26
+Dhapora Dam,25.0725,77.9639,Madhya Pradesh,Mahuar,6.234,1913.0,"NRLD_2019 (score=0.60, method=first_word_match)",3488.0,Aerma,tier3_nearest,13.23
+Rajgarh Dam,25.3447,77.5992,Madhya Pradesh,Local,2.27,1914.0,"NRLD_2019 (score=0.60, method=first_word_match)",3487.0,Sindh,tier3_nearest,16.65
+Majhgawan Dam,23.8433,79.8281,Madhya Pradesh,Local,4.05,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",4291.0,Bearma,tier3_nearest,7.46
+Pillowa Dam,26.4514,78.1444,Madhya Pradesh,Sank,16.93,1914.0,"NRLD_2019 (score=0.60, method=first_word_match)",3362.0,Sank,tier1_existing,0.287823
+Kotwal Dam,26.4886,78.1256,Madhya Pradesh,Asan,91.55,1914.0,"NRLD_2019 (score=0.60, method=first_word_match)",3366.0,Asan,tier1_existing,0.104673
+Khankuria Dam,24.2753,76.9444,Madhya Pradesh,Local,0.703,1915.0,"NRLD_2019 (score=0.60, method=first_word_match)",3589.0,Ghora Pachhar,tier3_nearest,14.86
+Jamakheri Dam,24.5889,77.7989,Madhya Pradesh,Local,4.53,1915.0,"NRLD_2019 (score=0.60, method=first_word_match)",4188.0,Urvashi,tier3_nearest,7.41
+Keshopur Dam,24.4822,77.9267,Madhya Pradesh,Local,2.41,1916.0,"NRLD_2019 (score=0.60, method=first_word_match)",4188.0,Urvashi,tier3_nearest,8.24
+Momanpura Dam,22.9375,76.3925,Madhya Pradesh,Local,4.23,1916.0,"NRLD_2019 (score=0.60, method=first_word_match)",3593.0,Kali Sindh,tier3_nearest,4.91
+Bharoli Dam,24.8358,77.8075,Madhya Pradesh,Local,2.07,1916.0,"NRLD_2019 (score=0.60, method=first_word_match)",3485.0,Sindh,tier3_nearest,6.2
+Mohari Dam,24.6139,77.4089,Madhya Pradesh,Kenera Nadi,2.67,1916.0,"NRLD_2019 (score=0.60, method=first_word_match)",3344.0,Sindh,tier3_nearest,7.1
+Narola Dam,23.4064,76.8108,Madhya Pradesh,Local,3.24,1916.0,"NRLD_2019 (score=0.60, method=first_word_match)",3581.0,Newaj,tier3_nearest,9.84
+Siloda Dam,23.3056,76.7981,Madhya Pradesh,Jamdhar,4.28,1916.0,"NRLD_2019 (score=0.60, method=first_word_match)",3581.0,Newaj,tier3_nearest,13.21
+Govindgarh Dam,24.3797,81.2733,Madhya Pradesh,Bihar Nadi,11.96,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",4077.0,Tons,tier3_nearest,5.97
+Harduamudar Dam,23.7708,79.5456,Madhya Pradesh,Local,1.59,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",4289.0,Bearma,tier3_nearest,4.77
+Mausandha Dam,23.7108,79.9192,Madhya Pradesh,Ghatprabha,1.393,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",4301.0,Patne,tier3_nearest,15.49
+Samarsingha Dam,24.6553,77.1647,Madhya Pradesh,Local,6.09,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",3340.0,Parbati,tier3_nearest,9.64
+Amahi Dam,24.5194,77.6825,Madhya Pradesh,Akhebarnadi,11.27,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",4188.0,Urvashi,tier3_nearest,8.95
+Rampur Dam,24.7731,77.1719,Madhya Pradesh,Negi,15.038,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",3340.0,Parbati,tier1_existing,0.552003
+Tigra Dam,26.2225,77.9997,Madhya Pradesh,Sankh,,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",3362.0,Sank,tier1_existing,0.041847
+Harsi Dam,25.7514,77.2319,Madhya Pradesh,Parwati,19.267,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",3337.0,Kuno,tier3_nearest,2.57
+Patharhatta Dam,24.5981,80.6958,Madhya Pradesh,Local Nalla,2.695,1918.0,"NRLD_2019 (score=0.60, method=first_word_match)",4100.0,Satna,tier3_nearest,2.56
+Chandapatha Dam,25.4339,77.7125,Madhya Pradesh,Local,7.78,1918.0,"NRLD_2019 (score=0.60, method=first_word_match)",3465.0,Sindh,tier3_nearest,9.27
+Baisly Dam,26.4289,78.4297,Madhya Pradesh,Vaisali,21.678,1919.0,"NRLD_2019 (score=0.60, method=first_word_match)",3370.0,Vaisali,tier1_existing,0.216783
+Chhoti Deori Dam,23.5642,79.7233,Madhya Pradesh,Bearona,0.84,1919.0,"NRLD_2019 (score=0.60, method=first_word_match)",4285.0,Bearma,tier3_nearest,15.73
+Lower Sakarwara Dam,23.78,79.8778,Madhya Pradesh,Patpara,3.482,1919.0,"NRLD_2019 (score=0.60, method=first_word_match)",4301.0,Patne,tier3_nearest,10.76
+Jaguwa Dam,23.7458,80.8744,Madhya Pradesh,Bhader,4.81,1921.0,"NRLD_2019 (score=0.60, method=first_word_match)",4369.0,Katni,tier3_nearest,9.2
+Ratona Dam,23.8219,78.6617,Madhya Pradesh,Local,0.618,1924.0,"NRLD_2019 (score=0.60, method=first_word_match)",4143.0,Dhasan,tier3_nearest,9.02
+Chandia Nalla Dam,24.31,79.0511,Madhya Pradesh,Local,6.0,1926.0,"NRLD_2019 (score=0.60, method=first_word_match)",4148.0,Dhasan,tier3_nearest,9.09
+Narayanpura Dam,24.5136,79.0689,Madhya Pradesh,Local,1.357,1926.0,"NRLD_2019 (score=0.60, method=first_word_match)",4153.0,Dhasan,tier3_nearest,5.31
+Amadi Dam,23.8231,80.56,Madhya Pradesh,Amadi,6.04,1927.0,"NRLD_2019 (score=0.60, method=first_word_match)",4300.0,Katni,tier3_nearest,9.02
+Mala Dam,23.6961,79.7375,Madhya Pradesh,Sun Nadi,19.96,1929.0,"NRLD_2019 (score=0.60, method=first_word_match)",4288.0,Bearma,tier3_nearest,7.65
+Godaghat Dam,23.795,79.8156,Madhya Pradesh,Local,4.63,1930.0,"NRLD_2019 (score=0.60, method=first_word_match)",4291.0,Bearma,tier3_nearest,11.93
+Depalpur Dam,22.8711,75.5717,Madhya Pradesh,Banaria Nalla,22.46,1931.0,"NRLD_2019 (score=0.60, method=first_word_match)",3658.0,Chambal,tier3_nearest,8.67
+Ramova Dam,26.1589,78.2233,Madhya Pradesh,Londra Nadi,12.96,1931.0,"NRLD_2019 (score=0.60, method=first_word_match)",3356.0,Vaisali,tier3_nearest,11.68
+Aoda Dam,25.515,76.7858,Madhya Pradesh,Seep,55.7,1934.0,"NRLD_2019 (score=0.60, method=first_word_match)",3330.0,Kadwal,tier3_nearest,4.76
+Kaketo Dam,25.8992,77.695,Madhya Pradesh,Parwati,80.51,1934.0,"NRLD_2019 (score=0.60, method=first_word_match)",3453.0,Parbati,tier1_existing,0.32967
+Jamonia Dam,23.24,77.1092,Madhya Pradesh,Local,12.496,1938.0,"NRLD_2019 (score=0.60, method=first_word_match)",3585.0,Paru,tier3_nearest,14.41
+Lilgi Bund Bela Dam,24.2614,80.7369,Madhya Pradesh,Lilgi Nalla,15.15,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",4101.0,Satna,tier3_nearest,7.02
+Yashvant Sagar Dam,22.8244,75.6939,Madhya Pradesh,Gambhir,15.963,1939.0,"NRLD_2019 (score=0.60, method=first_word_match)",3655.0,Gambhir,tier1_existing,0.287823
+Konajhir Dam,23.1303,77.0481,Madhya Pradesh,Local,1.035,1940.0,"NRLD_2019 (score=0.60, method=first_word_match)",3790.0,Ajnal,tier3_nearest,11.26
+Noonpani Dam,23.8703,79.5883,Madhya Pradesh,Local,0.75,1952.0,"NRLD_2019 (score=0.60, method=first_word_match)",4290.0,Bearma,tier3_nearest,8.92
+Sirsa Dam,26.045,77.8831,Madhya Pradesh,Koil,7.381,1953.0,"NRLD_2019 (score=0.60, method=first_word_match)",3362.0,Sank,tier3_nearest,10.81
+Gopalpura Dam,24.3171,75.1798,Madhya Pradesh,Local,5.657,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3645.0,Retam,tier1_existing,0.090687
+Poiadonger Dam,24.2403,75.7464,Madhya Pradesh,Local,2.197,1956.0,"NRLD_2019 (score=0.60, method=first_word_match)",3604.0,Ahu,tier3_nearest,3.12
+Ghatera Dam,23.5419,78.1111,Madhya Pradesh,Karnari,3.58,1956.0,"NRLD_2019 (score=0.60, method=first_word_match)",4172.0,Bina,tier3_nearest,16.96
+Mola Dam,24.3747,77.8775,Madhya Pradesh,Local,13.05,1956.0,"NRLD_2019 (score=0.60, method=first_word_match)",4178.0,Kethan,tier3_nearest,9.88
+Kadodia Dam,23.5114,76.1439,Madhya Pradesh,Local,1.105,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",3594.0,Lakundar,tier3_nearest,8.92
+Banda Bedra Dam,23.7453,77.8075,Madhya Pradesh,Local,2.454,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",4198.0,Baen,tier1_existing,1.037406
+Raipura Dam,23.2728,77.1147,Madhya Pradesh,Local,1.307,1930.0,"NRLD_2019 (score=0.60, method=first_word_match)",3585.0,Paru,tier3_nearest,10.98
+Sudra Dam,23.2508,77.7286,Madhya Pradesh,Kuhynala,1.646,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4194.0,Betwa,tier3_nearest,4.9
+Dhamdhusar Dam,23.0322,77.7014,Madhya Pradesh,Charua,2.577,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4190.0,Betwa,tier3_nearest,11.51
+Dahod Dam,23.0322,77.4875,Madhya Pradesh,Bhoghvi,19.364,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4191.0,Ajmar,tier3_nearest,8.99
+Jalheridhana Dam,23.6206,79.6631,Madhya Pradesh,Local,1.0,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4285.0,Bearma,tier3_nearest,7.76
+Pipariya Jugraj Dam,23.6097,79.6653,Madhya Pradesh,Gahira Nalla,0.51,1959.0,"NRLD_2019 (score=0.60, method=first_word_match)",4285.0,Bearma,tier3_nearest,8.27
+Moti Nalla Dam,23.8072,79.8228,Madhya Pradesh,Local,2.9,1959.0,"NRLD_2019 (score=0.60, method=first_word_match)",4291.0,Bearma,tier3_nearest,10.84
+Jabera Dam,23.5583,79.7161,Madhya Pradesh,Jamunha Nalla,4.05,1959.0,"NRLD_2019 (score=0.60, method=first_word_match)",4285.0,Bearma,tier3_nearest,15.42
+Morwan Dam,24.6306,75.0033,Madhya Pradesh,Gameri,16.46,1959.0,"NRLD_2019 (score=0.60, method=first_word_match)",3738.0,Gambhiri,tier3_nearest,18.2
+Lilgi Reservoir Dam,24.2619,80.7358,Madhya Pradesh,Lilgi,2.209,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",4101.0,Satna,tier3_nearest,7.14
+Satak Dam,23.0542,75.5383,Madhya Pradesh,Satak,25.61,1961.0,Wikipedia,3658.0,Chambal,tier1_existing,1.730823
+Gandhi Sagar Dam,24.0828,75.5533,Madhya Pradesh,Chambal,73.22,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",3634.0,Chambal,tier2_river_name,2.61
+Barrach Dam,24.6208,80.1533,Madhya Pradesh,Local,1.588,1961.0,"NRLD_2019 (score=0.60, method=first_word_match)",4268.0,Mirhasan,tier3_nearest,12.73
+Tejgarh Dam,23.6081,79.4056,Madhya Pradesh,Local,6.79,1961.0,"NRLD_2019 (score=0.60, method=first_word_match)",4287.0,Bearma,tier3_nearest,3.33
+Singhpur Dam,24.7572,80.5581,Madhya Pradesh,Local,2.771,1962.0,"NRLD_2019 (score=0.60, method=first_word_match)",4098.0,Satna,tier3_nearest,11.89
+Harridih Dam,23.2414,81.0789,Madhya Pradesh,Local,0.304,1962.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier1_existing,0.946164
+Daroli Dam,23.3522,79.4114,Madhya Pradesh,Kenkra Nalla,4.86,1962.0,"NRLD_2019 (score=0.60, method=first_word_match)",4308.0,Bearma,tier3_nearest,6.32
+Hathaikheda Dam,23.2683,77.4978,Madhya Pradesh,Ajnar,16.277,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",4191.0,Ajmar,tier3_nearest,11.7
+Ram Sagar Dam,25.6742,78.3992,Madhya Pradesh,Nicholi,5.866,1963.0,"NRLD_2019 (score=0.60, method=first_word_match)",3454.0,Sindh,tier3_nearest,14.43
+Goratal Dam,24.9719,79.4553,Madhya Pradesh,Goratal,11.25,1963.0,"NRLD_2019 (score=0.60, method=first_word_match)",4141.0,Dhasan,tier3_nearest,11.58
+Chhuhiya Dam,24.5783,81.81,Madhya Pradesh,Local,0.568,1963.0,"NRLD_2019 (score=0.60, method=first_word_match)",4057.0,Son,tier3_nearest,14.19
+Pdamasagar Dam,25.0008,78.9519,Madhya Pradesh,Local,1.911,1963.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,21.81
+Belgaon Dam,23.7297,79.7531,Madhya Pradesh,Local Nalla,0.3,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",4288.0,Bearma,tier3_nearest,9.28
+Madarkha Bandhi Dam,25.0875,79.6,Madhya Pradesh,Manyara,1.07,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",4140.0,Urmal,tier1_existing,1.4756340000000001
+Chandania Dam,23.1808,81.3392,Madhya Pradesh,Murna Nalla,1.228,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",4384.0,Son,tier3_nearest,12.16
+Jambar Dam,23.5506,77.755,Madhya Pradesh,Local,1.32,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",4192.0,Halali,tier1_existing,1.691085
+Simrar Dam,23.7225,80.4258,Madhya Pradesh,Simrar,12.93,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",4300.0,Katni,tier3_nearest,12.85
+Nandanwara Dam,25.0769,78.7583,Madhya Pradesh,Bargi Nadi,26.795,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",4169.0,Jamni,tier3_nearest,3.44
+Tehraka Dam,25.2881,78.9067,Madhya Pradesh,Naina Nadi,5.35,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",3457.0,Betwa,tier3_nearest,15.12
+Nagda Nalla Dam,23.645,78.845,Madhya Pradesh,Nagda Nalla,1.845,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",4124.0,Dehar,tier3_nearest,5.92
+Bhitrigarh Dam,23.6247,80.4164,Madhya Pradesh,Niwar,5.25,1965.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,22.2
+Ratapani Dam,22.95,77.6992,Madhya Pradesh,Godmedi,15.146,1965.0,"NRLD_2019 (score=0.60, method=first_word_match)",4190.0,Betwa,tier3_nearest,14.07
+Loni Dam,25.1381,81.5667,Madhya Pradesh,Loni,4.75,1965.0,"NRLD_2019 (score=0.60, method=first_word_match)",4085.0,Sokar,tier3_nearest,12.75
+Geolari Dam,24.2781,79.2356,Madhya Pradesh,Kalidoha Nadi,1.529,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",4150.0,Kathan,tier3_nearest,15.2
+Sidhi Dam,24.36,81.8892,Madhya Pradesh,Hirun,6.863,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",4057.0,Son,tier3_nearest,11.12
+Piploda Dam,25.7933,77.5014,Madhya Pradesh,Piprada Nalla,4.758,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",3453.0,Parbati,tier3_nearest,5.56
+Sendpa Dam,24.6089,79.3347,Madhya Pradesh,Gurda Nala,7.95,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",4152.0,Kathan,tier3_nearest,6.2
+Datla Dam,23.7486,80.5689,Madhya Pradesh,Local,7.55,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",4369.0,Katni,tier3_nearest,13.01
+Semrakudri Dam,23.9719,80.18,Madhya Pradesh,Laipri Nala,1.61,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",4301.0,Patne,tier3_nearest,9.21
+Madan Sagar Dam,25.7408,78.9986,Madhya Pradesh,Kulwara Nala,12.85,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",3464.0,Betwa,tier3_nearest,4.66
+Kulwa Dam,23.915,79.8197,Madhya Pradesh,Local,0.62,1967.0,"NRLD_2019 (score=0.60, method=first_word_match)",4291.0,Bearma,tier3_nearest,3.57
+Chhapari Dam,23.7003,79.9492,Madhya Pradesh,Mod Nadi,1.4,1967.0,"NRLD_2019 (score=0.60, method=first_word_match)",4301.0,Patne,tier3_nearest,16.2
+Dumduma Dam,25.2456,78.7711,Madhya Pradesh,Local,4.16,1967.0,"NRLD_2019 (score=0.60, method=first_word_match)",3462.0,Betwa,tier3_nearest,14.58
+Makhani Dam,23.3911,77.7419,Madhya Pradesh,Local,1.0,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",4194.0,Betwa,tier1_existing,2.045397
+Jawari Dam,24.0725,77.6728,Madhya Pradesh,Jawari,1.16,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",4178.0,Kethan,tier3_nearest,15.65
+Kasturipura Dam,24.0594,76.9522,Madhya Pradesh,Local,0.999,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",3589.0,Ghora Pachhar,tier1_existing,0.924519
+Gwal Sagar Dam,24.75,79.0631,Madhya Pradesh,Local,10.248,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",4153.0,Dhasan,tier3_nearest,13.33
+Anoo Dam,23.8317,79.5264,Madhya Pradesh,Local,0.82,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",4289.0,Bearma,tier3_nearest,10.78
+Barana Bamori Dam,25.0522,78.8192,Madhya Pradesh,Local,1.072,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",4169.0,Jamni,tier3_nearest,10.09
+Balwantpura Dam,24.8383,79.0814,Madhya Pradesh,Local,1.732,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",4154.0,Dhasan,tier3_nearest,18.72
+Jajone Dam,23.9156,78.1514,Madhya Pradesh,Local,6.88,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",4173.0,Kevtan,tier3_nearest,10.61
+Khurera Dam,24.6692,79.1603,Madhya Pradesh,Burun Nala,2.666,1969.0,"NRLD_2019 (score=0.60, method=first_word_match)",4153.0,Dhasan,tier3_nearest,5.07
+Moonjwar Dam,25.8019,77.7192,Madhya Pradesh,Local,5.87,1969.0,"NRLD_2019 (score=0.60, method=first_word_match)",3453.0,Parbati,tier3_nearest,8.0
+Burha Dam,24.8392,79.6383,Madhya Pradesh,Burha,10.85,1969.0,"NRLD_2019 (score=0.60, method=first_word_match)",4278.0,Banne,tier3_nearest,9.75
+Bhonhari Dam,23.8222,78.9194,Madhya Pradesh,Local,0.886,1969.0,"NRLD_2019 (score=0.60, method=first_word_match)",4147.0,Bewas,tier3_nearest,2.23
+Kakarhai Dam,24.4749,80.258,Madhya Pradesh,Local,0.618,1969.0,"NRLD_2019 (score=0.60, method=first_word_match)",4268.0,Mirhasan,tier3_nearest,6.39
+Kanhaiya Dam,24.5753,81.79,Madhya Pradesh,Local,1.037,1969.0,"NRLD_2019 (score=0.60, method=first_word_match)",4057.0,Son,tier3_nearest,14.09
+Padar Dam,24.6081,81.8239,Madhya Pradesh,Local,1.285,1969.0,"NRLD_2019 (score=0.60, method=first_word_match)",4062.0,Naina,tier3_nearest,11.27
+Basia Feeder Dam,24.8797,79.0453,Madhya Pradesh,Local,1.054,1970.0,"NRLD_2019 (score=0.60, method=first_word_match)",4154.0,Dhasan,tier3_nearest,17.91
+Madan Sagar Dam,25.0092,79.0386,Madhya Pradesh,Ghatprabha,2.58,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",4154.0,Dhasan,tier3_nearest,13.47
+Veer Sagar Dam,25.1864,78.6958,Madhya Pradesh,Local,26.15,1970.0,"NRLD_2019 (score=0.60, method=first_word_match)",4169.0,Jamni,tier3_nearest,10.48
+Bankuiya Dam,24.5981,81.1875,Madhya Pradesh,Local,1.29,1971.0,"NRLD_2019 (score=0.60, method=first_word_match)",4073.0,Satna,tier3_nearest,10.24
+Chhaya Sagar Dam,24.3078,81.1311,Madhya Pradesh,Local,0.444,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",4077.0,Tons,tier3_nearest,6.83
+Jamuniya Rao Dam,23.6164,77.0208,Madhya Pradesh,Local,0.776,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,10.83
+Bakiya Dam,23.9761,81.9844,Madhya Pradesh,Local,3.718,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",4330.0,Gopat,tier3_nearest,4.03
+Kacheri Feeder Dam,24.4378,79.3083,Madhya Pradesh,Local,1.105,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",4150.0,Kathan,tier3_nearest,3.98
+Virhana Dam,24.6953,81.1506,Madhya Pradesh,Local,3.029,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",4070.0,Satna,tier1_existing,0.38295
+Mauganj Dam,24.6614,81.9178,Madhya Pradesh,Gora Nalla,3.819,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",4062.0,Naina,tier3_nearest,11.59
+Banchor Dam,23.2164,77.7636,Madhya Pradesh,Arialkha,7.644,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",4194.0,Betwa,tier3_nearest,8.63
+Kulgari Dam,24.4769,80.7303,Madhya Pradesh,Durha,9.4,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",4100.0,Satna,tier3_nearest,9.0
+Budwa Dam,24.1839,81.4167,Madhya Pradesh,Local,9.22,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",4353.0,Banas,tier3_nearest,5.45
+Chhapi Dam,24.0108,76.3819,Madhya Pradesh,Chhapi,15.74,2005.0,"NRLD_2019 (score=0.60, method=first_word_match)",3572.0,Chhapi,tier2_river_name,8.58
+Chhilar Dam,23.3833,76.3,Madhya Pradesh,Chiller,34.79,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",3594.0,Lakundar,tier3_nearest,8.89
+Dharam Sagar Dam,25.0325,79.1389,Madhya Pradesh,Local,12.09,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",4131.0,Dhasan,tier3_nearest,3.26
+Sarro Dam,24.3656,82.0361,Madhya Pradesh,Dhonnai,2.78,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",4334.0,Gopat,tier3_nearest,6.42
+Akhajhiri Dam,25.0344,77.8911,Madhya Pradesh,Akhajhiri Nalla,11.71,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",3488.0,Aerma,tier3_nearest,13.29
+Koncha Dam,24.3333,77.8544,Madhya Pradesh,Koncha,21.65,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",4178.0,Kethan,tier3_nearest,11.34
+Bila Dam,24.2608,79.0283,Madhya Pradesh,Bilasi,55.7,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",4148.0,Dhasan,tier3_nearest,10.65
+Rajendra Sagar Dam,24.6439,78.8614,Madhya Pradesh,Local,18.46,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",4162.0,Jamni,tier3_nearest,7.09
+Pondi Dam,24.2853,82.0,Madhya Pradesh,Local,2.583,1974.0,"NRLD_2019 (score=0.60, method=first_word_match)",4334.0,Gopat,tier3_nearest,3.35
+Burlai Dam,23.6544,76.2628,Madhya Pradesh,Local,2.86,1974.0,"NRLD_2019 (score=0.60, method=first_word_match)",3595.0,Lakundar,tier3_nearest,4.06
+Madhwani (Ncfl) Dam,24.2314,81.3178,Madhya Pradesh,Local,3.144,1974.0,"NRLD_2019 (score=0.60, method=first_word_match)",4375.0,Son,tier3_nearest,4.52
+Belha Dam,24.1806,81.6617,Madhya Pradesh,Local,36.51,1974.0,"NRLD_2019 (score=0.60, method=first_word_match)",4354.0,Banas,tier3_nearest,3.78
+Beniganj Dam,24.7622,79.8786,Madhya Pradesh,Beni,27.58,1974.0,"NRLD_2019 (score=0.60, method=first_word_match)",4277.0,Ken,tier3_nearest,7.38
+Bandri Dam,24.0317,78.6181,Madhya Pradesh,Local,,1974.0,"NRLD_2019 (score=0.60, method=first_word_match)",4143.0,Dhasan,tier3_nearest,5.98
+Kankarpura Dam,22.5736,75.7275,Madhya Pradesh,Local,0.623,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",3655.0,Gambhir,tier3_nearest,10.26
+Barodia Dam,23.6531,77.0444,Madhya Pradesh,Local,6.223,1961.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,9.21
+Nibuha Dam,24.3625,82.0789,Madhya Pradesh,Local,1.789,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4334.0,Gopat,tier3_nearest,3.4
+Fatehpur Dam,24.0361,76.4764,Madhya Pradesh,Local,0.808,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",3572.0,Chhapi,tier3_nearest,9.39
+Amua Dam,24.3392,80.3322,Madhya Pradesh,Local,1.121,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4099.0,Gudne,tier3_nearest,2.38
+Bisonia Dam,24.2708,77.7256,Madhya Pradesh,Jwari Nadi,2.094,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4178.0,Kethan,tier3_nearest,11.8
+Bamraha Dam,24.0078,81.9303,Madhya Pradesh,Local,4.199,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4331.0,Gopat,tier1_existing,0.0
+Karmodia Dam,23.2778,77.7906,Madhya Pradesh,Barna,5.288,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4194.0,Betwa,tier3_nearest,9.38
+Atari Dam,24.6281,81.9344,Madhya Pradesh,Gora Nalla,2.265,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4062.0,Naina,tier3_nearest,14.99
+Bagha Nalla Dam,24.6419,79.4611,Madhya Pradesh,Local,2.323,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4155.0,Shyamri,tier3_nearest,10.27
+Amjhari Dam,24.2425,81.6475,Madhya Pradesh,Local,1.345,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4354.0,Banas,tier3_nearest,4.05
+Devendra Sagar Dam,24.6375,80.36,Madhya Pradesh,Sukta Nalla,12.85,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4098.0,Satna,tier3_nearest,11.84
+Kethan Dam,24.095,77.6664,Madhya Pradesh,Kethan,19.157,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4178.0,Kethan,tier3_nearest,14.42
+S. Ashok Sagar Dam,23.5017,77.5511,Madhya Pradesh,Halali,25.27,,Not found,4192.0,Halali,tier1_existing,0.047064
+Hatupur Dam,24.7864,80.4367,Madhya Pradesh,Local,1.24,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4249.0,Baghain,tier3_nearest,9.59
+Jamunhai Dam,24.6814,80.3058,Madhya Pradesh,Local,0.897,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4268.0,Mirhasan,tier3_nearest,16.78
+Asrar Dam,23.9917,80.2542,Madhya Pradesh,Local,0.696,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",4299.0,Ken,tier3_nearest,6.53
+Deopur Dam,24.1511,77.6161,Madhya Pradesh,Local,0.943,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",3344.0,Sindh,tier3_nearest,13.07
+Ratheli Dam,23.5039,80.9256,Madhya Pradesh,Local,0.95,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",4371.0,Ghodchhatra,tier3_nearest,10.88
+Barkhedi Dam,23.1564,77.1239,Madhya Pradesh,Sewan,1.25,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",3790.0,Ajnal,tier3_nearest,18.98
+Chiraha Dam,24.2711,80.1997,Madhya Pradesh,Local,1.245,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",4301.0,Patne,tier3_nearest,4.24
+Sapahi Dam,24.4097,82.0492,Madhya Pradesh,Local,2.2,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",4334.0,Gopat,tier3_nearest,8.92
+Chita Nalla Dam,25.1267,78.9042,Madhya Pradesh,Local,1.033,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",4128.0,Kurai,tier3_nearest,15.33
+Dhantoli Dam,22.7044,75.6556,Madhya Pradesh,Local,2.41,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",3655.0,Gambhir,tier3_nearest,6.55
+Mau Dam,24.0592,81.3789,Madhya Pradesh,Local,2.089,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",4374.0,Son,tier3_nearest,8.26
+Latar Dam,23.1444,81.9125,Madhya Pradesh,Magrani,3.08,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",2480.0,Kevai,tier3_nearest,2.97
+Kishanpura Dam,22.6714,75.6503,Madhya Pradesh,Nulukhi Nala,2.493,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",3655.0,Gambhir,tier3_nearest,7.12
+Ashok Nagar (Tulsi Sarovar) Dam,24.5833,77.7408,Madhya Pradesh,Local,1.593,,Not found,4188.0,Urvashi,tier3_nearest,9.67
+Kerwan Dam,23.165,77.3711,Madhya Pradesh,Kerwan,25.026,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",4191.0,Ajmar,tier3_nearest,4.27
+Simariya No.1 Dam,25.9911,77.9958,Madhya Pradesh,Jamdiaro Nala,4.308,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",3476.0,Non,tier3_nearest,7.44
+Ragura Dam,24.7422,78.8147,Madhya Pradesh,Local,2.84,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",4165.0,Jamni,tier3_nearest,4.39
+Nagda Dam,22.9083,76.0583,Madhya Pradesh,Shipra,2.586,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",3654.0,Ashamati,tier3_nearest,6.91
+Khitoli Dam,23.7025,80.8403,Madhya Pradesh,Local,1.6,1977.0,"NRLD_2019 (score=0.60, method=first_word_match)",4369.0,Katni,tier3_nearest,3.29
+Rampa Dam,23.9669,82.5017,Madhya Pradesh,Local,1.028,1977.0,"NRLD_2019 (score=0.60, method=first_word_match)",4336.0,Mayar,tier1_existing,2.077698
+Pondi Dam,23.8286,79.6654,Madhya Pradesh,Local,3.62,1974.0,"NRLD_2019 (score=0.60, method=first_word_match)",4290.0,Bearma,tier1_existing,0.001887
+Karhi Dam,24.2681,80.23,Madhya Pradesh,Kurali Nala,4.76,1977.0,"NRLD_2019 (score=0.60, method=first_word_match)",4301.0,Patne,tier3_nearest,7.14
+Somla Dam,23.7831,78.6892,Madhya Pradesh,Local,1.63,1977.0,"NRLD_2019 (score=0.60, method=first_word_match)",4147.0,Bewas,tier3_nearest,8.83
+Datia Dam,23.9339,79.6397,Madhya Pradesh,Kakli Nala,2.7,1977.0,"NRLD_2019 (score=0.60, method=first_word_match)",4290.0,Bearma,tier3_nearest,6.33
+Umargarh Dam,24.0242,81.1642,Madhya Pradesh,Local,0.9,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4105.0,Son,tier3_nearest,6.86
+Hirawar Dam,24.0564,81.0942,Madhya Pradesh,Local,1.06,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4375.0,Son,tier3_nearest,6.59
+Kheria Punawali Dam,25.4389,78.2681,Madhya Pradesh,Bahora Nala,1.8,1913.0,"NRLD_2019 (score=0.60, method=first_word_match)",3471.0,Bilrai,tier3_nearest,10.66
+Bardha Dam,23.8506,77.6061,Madhya Pradesh,Local,3.01,1930.0,"NRLD_2019 (score=0.60, method=first_word_match)",4199.0,Sagar,tier3_nearest,7.7
+Johila Dam,22.7806,81.7408,Madhya Pradesh,Johila,8.53,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier3_nearest,20.8
+Amrabad Dam,23.3036,77.8858,Madhya Pradesh,Local,2.65,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4196.0,Betwa,tier3_nearest,13.08
+Mansurwari Dam,23.4214,78.9731,Madhya Pradesh,Sukchain Nalla,13.28,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4125.0,Sonar,tier3_nearest,8.91
+Bhaisawar Dam,24.8164,80.7056,Madhya Pradesh,Khatiari,9.98,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4070.0,Satna,tier3_nearest,18.24
+Kazikhedi Dam,23.4925,75.6889,Madhya Pradesh,Kharkhara,7.547,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",3631.0,Shipra,tier3_nearest,4.21
+Imalia Dam,23.9925,80.1875,Madhya Pradesh,Local,0.616,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",4301.0,Patne,tier3_nearest,8.88
+Chitron Dam,23.7319,81.4975,Madhya Pradesh,Local,1.11,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",4347.0,Banas,tier3_nearest,6.62
+Chikhali Dam,22.9492,77.5917,Madhya Pradesh,Local,1.682,,Not found,4190.0,Betwa,tier3_nearest,8.53
+Sher Dam,24.1642,81.82,Madhya Pradesh,Local,3.27,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",4332.0,Gopat,tier3_nearest,6.9
+Gyaraspura Dam,23.4342,77.1733,Madhya Pradesh,Local,3.164,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,10.27
+Hedapura Dam,23.755,77.1211,Madhya Pradesh,Local,2.134,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,7.14
+Basni Dam,23.7628,79.3575,Madhya Pradesh,Local,0.857,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",4296.0,Kopra,tier3_nearest,3.5
+Putliwar Dam,25.1508,78.1725,Madhya Pradesh,Pihutiwar Nadi,5.25,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",3478.0,Betwa,tier3_nearest,7.56
+Gonda Dam,24.7528,80.5136,Madhya Pradesh,Local,0.48,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",4098.0,Satna,tier3_nearest,11.76
+Bhaisakhedi Dam,23.41,75.9469,Madhya Pradesh,Kalisindh,7.56,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",3605.0,Chhoti Kali Sindh,tier3_nearest,3.23
+Kanchan Dam,24.1547,82.4531,Madhya Pradesh,Kancham,,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",4335.0,Gopat,tier3_nearest,16.22
+Chhapani Dam,22.8828,81.5978,Madhya Pradesh,Local,0.495,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier3_nearest,5.54
+Gadaghat Dam,23.8075,79.8225,Madhya Pradesh,Local,0.71,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",4291.0,Bearma,tier3_nearest,10.8
+Buchki Dam,23.5075,81.1639,Madhya Pradesh,Local,0.96,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",4373.0,Johilla,tier1_existing,0.61938
+Ambabarod Dam,23.8397,75.4461,Madhya Pradesh,Local,1.017,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3652.0,Chambal,tier3_nearest,6.06
+Moliyakhedi Dam,23.9164,76.25,Madhya Pradesh,Local,0.565,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3595.0,Lakundar,tier1_existing,0.936618
+Sidoli Dam,23.1872,81.7131,Madhya Pradesh,Local,4.825,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",4380.0,Son,tier3_nearest,4.24
+Katkiya Dam,22.8822,75.6908,Madhya Pradesh,Local,0.567,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3655.0,Gambhir,tier1_existing,0.086358
+Gopaldas Dam,24.3939,81.8706,Madhya Pradesh,Local,1.646,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",4057.0,Son,tier3_nearest,7.07
+Koyalkhedi Dam,23.4489,75.9194,Madhya Pradesh,Local,2.675,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3605.0,Chhoti Kali Sindh,tier3_nearest,3.92
+Naktora Dam,24.3272,80.7081,Madhya Pradesh,Amra,3.495,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",4101.0,Satna,tier3_nearest,8.83
+Chapper Dam,22.9897,76.8019,Madhya Pradesh,Local,3.794,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3788.0,Papras,tier3_nearest,6.92
+Naharkheda Dam,23.9097,76.0564,Madhya Pradesh,Local,1.694,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3600.0,Ahu,tier3_nearest,7.81
+Pipliyakumar Dam,23.7211,76.1031,Madhya Pradesh,Ban Ganga,11.21,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",3595.0,Lakundar,tier3_nearest,10.55
+Amiya Bahadurpur Dam,23.6528,75.6914,Madhya Pradesh,Gandhi,25.23,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",3631.0,Shipra,tier3_nearest,7.05
+Makroda Dam,24.7267,77.2722,Madhya Pradesh,Negri,46.593,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3340.0,Parbati,tier3_nearest,8.22
+Paronch Dam,25.2694,78.1008,Madhya Pradesh,Paronch,18.98,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3472.0,Mahuar,tier3_nearest,7.75
+Dudiyankhera Dam,24.3353,79.0836,Madhya Pradesh,Local,2.6,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",4151.0,Kathan,tier3_nearest,6.07
+Chidua Dam,24.7794,80.5933,Madhya Pradesh,Local,1.45,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",4098.0,Satna,tier3_nearest,14.35
+Kalrewa Dam,23.8036,79.4875,Madhya Pradesh,Local,1.36,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",4289.0,Bearma,tier3_nearest,11.67
+Deopur Dam,24.0444,76.4722,Madhya Pradesh,Local,0.92,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",3572.0,Chhapi,tier3_nearest,8.52
+Pongri Dam,23.3169,81.4308,Madhya Pradesh,Local,0.906,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",4383.0,Son,tier3_nearest,4.39
+Amanpura Dam,24.0578,76.4794,Madhya Pradesh,Local,1.001,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",3572.0,Chhapi,tier3_nearest,8.49
+Chithara Dam,24.8761,80.8544,Madhya Pradesh,Local,1.462,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",4247.0,Paisuni,tier3_nearest,11.76
+Harithone Dam,24.9822,78.0022,Madhya Pradesh,Local,1.0,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",4156.0,Urvashi,tier3_nearest,17.01
+Parshukhedi Dam,23.7114,76.0378,Madhya Pradesh,Local,1.37,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",3595.0,Lakundar,tier3_nearest,17.01
+Ichhawar Dam,23.0033,77.0194,Madhya Pradesh,Ajnal,2.09,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",3790.0,Ajnal,tier3_nearest,14.38
+Marhi Dam,24.3322,82.3586,Madhya Pradesh,Semra Nadi,14.243,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",4335.0,Gopat,tier3_nearest,7.9
+Belhara Dam,23.4672,79.5078,Madhya Pradesh,Mod Nadi,3.5,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",4285.0,Bearma,tier1_existing,2.004771
+Jamunia Dam,23.7517,79.4089,Madhya Pradesh,Modar Nala,4.21,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",4296.0,Kopra,tier3_nearest,8.45
+Sahibkhedi Dam,23.2478,75.8264,Madhya Pradesh,Surasa,12.46,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",3656.0,Shipra,tier3_nearest,4.32
+Jarmora Dam,24.8686,81.1681,Madhya Pradesh,Jarmora Nalla,18.77,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",4074.0,Tons,tier3_nearest,12.8
+Naren Dam,24.0228,77.7561,Madhya Pradesh,Naren,18.82,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",4199.0,Sagar,tier3_nearest,14.82
+Bhawanipur Dam,24.8383,80.5778,Madhya Pradesh,Chipaha Nadi,0.25,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",4249.0,Baghain,tier3_nearest,9.55
+Amlabardia Dam,23.8661,75.9019,Madhya Pradesh,Local,0.441,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",3600.0,Ahu,tier3_nearest,11.94
+Amkoi Dam,24.4428,80.4992,Madhya Pradesh,Murgwa Nalla,6.29,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",4099.0,Gudne,tier3_nearest,7.49
+Kuari Dam,25.0344,81.7275,Madhya Pradesh,Local,1.198,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",4066.0,Tons,tier1_existing,0.12198899999999999
+Semarwar Dam,24.065,81.8156,Madhya Pradesh,Paniha,0.779,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",4332.0,Gopat,tier3_nearest,9.27
+Sawsara Dam,24.0828,76.9178,Madhya Pradesh,Local,1.226,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",3589.0,Ghora Pachhar,tier1_existing,1.4652
+Malavar Dam,23.8353,77.0589,Madhya Pradesh,Local,1.081,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",3583.0,Dudhi,tier3_nearest,12.02
+Deori Dam,23.9956,76.4997,Madhya Pradesh,Local,1.109,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",3571.0,Ghar Ganga,tier3_nearest,8.88
+Charkhari Dam,24.0642,81.4014,Madhya Pradesh,Shadol,1.4,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",4352.0,Banas,tier3_nearest,8.26
+Surkhi Dam,23.6375,78.8075,Madhya Pradesh,Local,3.83,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",4124.0,Dehar,tier3_nearest,7.77
+Kudri Dam,23.6722,81.5803,Madhya Pradesh,Local,1.7,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",4347.0,Banas,tier3_nearest,10.17
+Dhabla Dewan Dam,24.1367,75.7069,Madhya Pradesh,Local,2.66,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",3604.0,Ahu,tier3_nearest,10.62
+Machhariya Dam,23.4231,78.2781,Madhya Pradesh,Natyan Nalla,3.27,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",4172.0,Bina,tier3_nearest,5.2
+Devikheda Dam,23.4119,76.1422,Madhya Pradesh,Local,6.45,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",3594.0,Lakundar,tier3_nearest,7.09
+Kuda Dam,25.4997,77.3733,Madhya Pradesh,Local,2.33,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",3347.0,Manki,tier3_nearest,8.95
+Matuwa Dam,24.6817,80.3061,Madhya Pradesh,Local,1.72,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",4268.0,Mirhasan,tier3_nearest,16.82
+Nando Dam,23.9453,82.4511,Madhya Pradesh,Local,0.8,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4336.0,Mayar,tier3_nearest,7.13
+Tikara Dam,23.0967,81.1342,Madhya Pradesh,Masandhar,0.889,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier3_nearest,6.95
+Balua Dam,24.0533,82.4739,Madhya Pradesh,Local,1.19,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4336.0,Mayar,tier3_nearest,7.76
+Padrai Dam,23.7075,79.5022,Madhya Pradesh,Local,1.024,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4287.0,Bearma,tier3_nearest,3.1
+Bagan Dam,22.98,81.6125,Madhya Pradesh,Bagan,0.917,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier3_nearest,3.98
+Godhanpattan Dam,22.8647,81.8172,Madhya Pradesh,Local,1.24,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4378.0,Tipan,tier3_nearest,12.84
+Akhetpur Dam,24.0475,81.4517,Madhya Pradesh,Local,1.571,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4352.0,Banas,tier3_nearest,3.1
+Bahniakhedi Dam,23.3672,76.8444,Madhya Pradesh,Berawari,1.226,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",3581.0,Newaj,tier3_nearest,13.61
+Kumharwara Dam,23.8142,80.1925,Madhya Pradesh,Local,0.653,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4300.0,Katni,tier3_nearest,8.03
+Lakhnoute Dam,23.6842,81.4778,Madhya Pradesh,Local,1.47,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4349.0,Son,tier3_nearest,8.24
+Barkhedi Siloki Dam,23.8428,76.1286,Madhya Pradesh,Local,3.742,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",3595.0,Lakundar,tier3_nearest,9.53
+Doraha Dam,23.3967,77.1869,Madhya Pradesh,Utawali,18.06,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",3585.0,Paru,tier3_nearest,10.98
+Khameri Bagsari Dam,23.845,79.7839,Madhya Pradesh,Local,1.48,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4291.0,Bearma,tier3_nearest,6.03
+Karmai Dam,24.1386,81.3411,Madhya Pradesh,Local,1.408,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4374.0,Son,tier1_existing,1.003773
+Khaikheda Dam,23.4567,77.1864,Madhya Pradesh,Local,0.736,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,9.89
+Shukhar Dam,24.6378,82.4461,Madhya Pradesh,Local,2.099,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",3973.0,Belan,tier3_nearest,8.67
+Motipura Dam,23.34,75.7431,Madhya Pradesh,Local,0.85,1999.0,"NRLD_2019 (score=0.60, method=first_word_match)",3656.0,Shipra,tier3_nearest,3.39
+Dunguna Dam,25.4586,78.0844,Madhya Pradesh,Narhikhar Nala,2.35,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",3472.0,Mahuar,tier3_nearest,4.47
+Lapti Dam,22.8458,81.7553,Madhya Pradesh,Local,1.508,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier3_nearest,16.89
+Tildha Dam,24.1728,81.7314,Madhya Pradesh,Local,1.146,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",4354.0,Banas,tier3_nearest,10.18
+Harratola Dam,22.9369,81.5656,Madhya Pradesh,Butti,1.42,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier3_nearest,2.58
+Longerpura Dam,23.5972,77.5364,Madhya Pradesh,Local,1.316,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",4192.0,Halali,tier3_nearest,10.53
+Guradia Roopchand Dam,22.9603,76.5683,Madhya Pradesh,Local,1.725,1997.0,"NRLD_2019 (score=0.60, method=first_word_match)",3789.0,Parbati,tier3_nearest,10.46
+Moondla Dam,22.9369,76.9378,Madhya Pradesh,Local,1.727,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",3790.0,Ajnal,tier3_nearest,18.79
+Garra Dam,23.9708,82.5922,Madhya Pradesh,Local,1.689,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",4336.0,Mayar,tier3_nearest,5.01
+Hirapur Dam,23.6153,78.7828,Madhya Pradesh,Dehar Nadi,1.588,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",4124.0,Dehar,tier2_river_name,8.1
+Bharra Dam,24.3847,82.2628,Madhya Pradesh,Local,6.21,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",4335.0,Gopat,tier1_existing,1.134864
+Sukha Nalla Dam,24.7992,77.2806,Madhya Pradesh,Local,2.582,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",3340.0,Parbati,tier3_nearest,7.88
+Pehsari Dam,25.9656,77.7606,Madhya Pradesh,Mowar,44.25,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",3453.0,Parbati,tier3_nearest,9.03
+Dhangaon Dam,23.8472,80.6158,Madhya Pradesh,Local,0.92,,Not found,4369.0,Katni,tier3_nearest,3.32
+Silkheda Dam,23.5614,77.25,Madhya Pradesh,Local,3.07,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,11.17
+Chhewla Dam,23.4414,79.0019,Madhya Pradesh,Mod Nadi,1.267,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",4125.0,Sonar,tier3_nearest,9.55
+Kandra Dam,23.6592,80.6167,Madhya Pradesh,Local,1.1,,Not found,4369.0,Katni,tier3_nearest,14.21
+Majholi Dam,24.045,82.6994,Madhya Pradesh,Local,1.029,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",4622.0,Rihand,tier3_nearest,2.73
+Bharla Dam,23.1208,75.8797,Madhya Pradesh,Local,1.555,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",3654.0,Ashamati,tier3_nearest,5.38
+Koka Dam,24.3033,81.2,Madhya Pradesh,Local,3.19,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",4077.0,Tons,tier3_nearest,8.68
+Lolki Dam,23.8858,76.1178,Madhya Pradesh,Local,1.35,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",3595.0,Lakundar,tier3_nearest,10.26
+Harduapondi Dam,23.6406,79.3686,Madhya Pradesh,Local,2.25,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",4287.0,Bearma,tier3_nearest,8.43
+Bhouri Dam,23.2747,77.2794,Madhya Pradesh,Local,2.431,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",4191.0,Ajmar,tier3_nearest,3.77
+Kalyanpura Dam,23.7667,77.3261,Madhya Pradesh,Mawal,2.68,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,11.24
+Sanjay Sagar Dam,24.3742,77.2383,Madhya Pradesh,Gomukh,37.5,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",3777.0,Parbati,tier3_nearest,11.2
+Gidwasan Dam,25.9192,78.6144,Madhya Pradesh,Local,1.53,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",3363.0,Pahuj,tier1_existing,0.439449
+Ruthai (Gopi Krishna Sagar) Dam,24.5472,77.2325,Madhya Pradesh,Chopan Nadi,,,Not found,3779.0,Chopani,tier1_existing,0.023532
+Hinouta Dam,24.2922,81.2086,Madhya Pradesh,Local,0.488,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4077.0,Tons,tier3_nearest,10.18
+Basaura Dam,23.9667,82.5403,Madhya Pradesh,Local,0.866,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4336.0,Mayar,tier1_existing,1.466976
+Deora Malhani Dam,24.3253,81.2414,Madhya Pradesh,Local,1.074,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4077.0,Tons,tier3_nearest,9.38
+Kodia Dam,23.1614,80.525,Madhya Pradesh,Local,1.25,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,40.26
+Kanari Dam,23.7744,81.3528,Madhya Pradesh,Local,0.6,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4105.0,Son,tier3_nearest,10.97
+Barod Dam,24.2678,77.2847,Madhya Pradesh,Local,1.53,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",3777.0,Parbati,tier3_nearest,13.55
+Bhirata Dam,24.9514,79.3819,Madhya Pradesh,Local,0.881,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4141.0,Dhasan,tier3_nearest,4.43
+Sohira Dam,24.5028,82.3814,Madhya Pradesh,Local,2.297,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4056.0,Gopat,tier3_nearest,4.1
+Baliya Dam,24.0869,82.5025,Madhya Pradesh,Local,2.554,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4336.0,Mayar,tier3_nearest,9.17
+Chanderi Dam,23.4083,77.3364,Madhya Pradesh,Chamari,7.179,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4192.0,Halali,tier3_nearest,9.14
+Ghorapachhar Dam,23.2772,77.5303,Madhya Pradesh,Ghorapachhar Nalla,12.41,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4194.0,Betwa,tier3_nearest,14.24
+Barchar Dam,24.0461,81.8967,Madhya Pradesh,Barchar,17.18,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4332.0,Gopat,tier3_nearest,4.08
+Sidhkhad Dam,25.7228,78.7375,Madhya Pradesh,Local,1.825,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",3459.0,Pahuj,tier3_nearest,2.06
+Vindhya Wasini Dam,24.1744,79.1228,Madhya Pradesh,Local,2.58,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",4147.0,Bewas,tier3_nearest,7.5
+Karanpather Dam,22.9403,81.3294,Madhya Pradesh,Local,0.41,1987.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier3_nearest,3.85
+Sarai Dam,23.2486,80.6061,Madhya Pradesh,Local,0.68,1987.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,28.33
+Nainawad Dam,23.3731,76.2358,Madhya Pradesh,Local,0.83,1987.0,"NRLD_2019 (score=0.60, method=first_word_match)",3594.0,Lakundar,tier3_nearest,2.38
+Tora Dam,25.6633,77.4742,Madhya Pradesh,Local,1.45,1987.0,"NRLD_2019 (score=0.60, method=first_word_match)",3453.0,Parbati,tier3_nearest,6.65
+Tillar Dam,23.5997,76.1092,Madhya Pradesh,Tillar,52.197,1987.0,"NRLD_2019 (score=0.60, method=first_word_match)",3597.0,Tila,tier3_nearest,10.76
+Bhaijiya Dam,23.6311,80.5625,Madhya Pradesh,Local,0.626,1987.0,"NRLD_2019 (score=0.60, method=first_word_match)",4369.0,Katni,tier3_nearest,20.54
+Silpari Dam,23.4461,81.4419,Madhya Pradesh,Local,1.357,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",4385.0,Kunu,tier3_nearest,3.87
+Kantoor Nalla Dam,23.0758,81.6789,Madhya Pradesh,Mod Nadi,1.028,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",4378.0,Tipan,tier3_nearest,5.17
+Gurtara Dam,23.2683,81.4156,Madhya Pradesh,Local,0.65,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",4384.0,Son,tier3_nearest,5.1
+Butki Dam,23.1261,81.71,Madhya Pradesh,Local,0.98,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",4378.0,Tipan,tier1_existing,0.175269
+Asawati Dam,24.1772,75.5183,Madhya Pradesh,Local,1.035,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",3634.0,Chambal,tier3_nearest,7.54
+Amjhar Dam,23.6967,81.5592,Madhya Pradesh,Local,1.84,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",4347.0,Banas,tier3_nearest,7.18
+Chateni Dam,24.1639,81.2786,Madhya Pradesh,Local,2.7,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",4375.0,Son,tier1_existing,1.938726
+Laduna Dam,23.9839,75.3439,Madhya Pradesh,Local,2.963,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",3652.0,Chambal,tier3_nearest,12.72
+Kankerkheda Dam,23.0931,77.0394,Madhya Pradesh,Utawali,4.259,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",3790.0,Ajnal,tier3_nearest,10.9
+Kaliasote Dam,23.1972,77.4075,Madhya Pradesh,Kaliasot,35.887,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",4191.0,Ajmar,tier1_existing,0.041847
+Birsinghpur Dam,23.3244,81.0333,Madhya Pradesh,Johila,171.0,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier1_existing,0.044511
+Keeratwari Dam,25.8667,78.9667,Madhya Pradesh,Ghatprabha,0.96,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",3375.0,Pahuj,tier3_nearest,8.92
+Tanda Dam,23.1928,76.4936,Madhya Pradesh,Local,0.976,1989.0,"NRLD_2019 (score=0.60, method=first_word_match)",3578.0,Kali Sindh,tier3_nearest,5.95
+Baorikheda Dam,24.246,76.0929,Madhya Pradesh,Local,1.9,1989.0,"NRLD_2019 (score=0.60, method=first_word_match)",3570.0,Chauli,tier3_nearest,2.4
+Rampura Dam,24.5789,80.0739,Madhya Pradesh,Local,1.627,1989.0,"NRLD_2019 (score=0.60, method=first_word_match)",4268.0,Mirhasan,tier3_nearest,10.75
+Laxmikheda Dam,23.805,76.1319,Madhya Pradesh,Local,4.08,1989.0,"NRLD_2019 (score=0.60, method=first_word_match)",3595.0,Lakundar,tier3_nearest,8.87
+Mohini Pick-Up Weir Dam,25.6708,77.8861,Madhya Pradesh,Sindh,108.81,,Not found,3469.0,Sindh,tier1_existing,0.24686399999999997
+Bachhlon Dam,23.9228,78.29,Madhya Pradesh,Ghatprabha,,1989.0,"NRLD_2019 (score=0.60, method=first_word_match)",4174.0,Bina,tier1_existing,0.041847
+Barnai Dam,24.3786,81.8167,Madhya Pradesh,Local,1.661,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4057.0,Son,tier3_nearest,7.36
+Johilli Dam,23.38,81.0014,Madhya Pradesh,Johilli,0.687,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier1_existing,0.016649999999999998
+Girbi Dam,22.9656,81.6658,Madhya Pradesh,Dhupsara,1.45,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier3_nearest,6.19
+Barbaspur Dam,23.3936,81.025,Madhya Pradesh,Mod Nadi,3.11,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier1_existing,1.457985
+Maratha Dam,24.1658,81.7178,Madhya Pradesh,Local,1.254,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4354.0,Banas,tier3_nearest,9.28
+Bohita Dam,22.895,81.6239,Madhya Pradesh,Kantoor,1.796,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4372.0,Johilla,tier3_nearest,3.86
+Bansichikhli Dam,23.3261,79.3181,Madhya Pradesh,Local,2.56,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4308.0,Bearma,tier3_nearest,2.7
+Mehroi Dam,23.9228,80.9381,Madhya Pradesh,Sone,5.206,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4102.0,Bhandar,tier3_nearest,2.89
+Jhirgiri Dam,23.6431,80.5731,Madhya Pradesh,Jhirgiri Nalla,4.69,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4369.0,Katni,tier3_nearest,18.93
+Umrar Dam,23.4922,80.8239,Madhya Pradesh,Umrar,18.9,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4369.0,Katni,tier3_nearest,14.31
+Mahuagaon Dam,24.1131,81.9411,Madhya Pradesh,Local,0.52,1991.0,"NRLD_2019 (score=0.60, method=first_word_match)",4332.0,Gopat,tier3_nearest,3.37
+Purwa Dam,24.7936,81.2483,Madhya Pradesh,Local,0.768,1991.0,"NRLD_2019 (score=0.60, method=first_word_match)",4074.0,Tons,tier1_existing,1.660449
+Nalajhiri Dam,24.0211,77.1117,Madhya Pradesh,Local,1.062,1991.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,6.64
+Kalyanpur Dam,23.7658,77.3272,Madhya Pradesh,Mawal,0.802,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,11.37
+Agar Agari Dam,23.8022,77.0758,Madhya Pradesh,Ajnar Nadi,2.301,1991.0,"NRLD_2019 (score=0.60, method=first_word_match)",3583.0,Dudhi,tier3_nearest,11.64
+Chinnod Dam,25.4769,78.1889,Madhya Pradesh,Local,2.013,1991.0,"NRLD_2019 (score=0.60, method=first_word_match)",3471.0,Bilrai,tier3_nearest,4.64
+Bhawanikheda Dam,23.8544,78.155,Madhya Pradesh,Local,2.45,1991.0,"NRLD_2019 (score=0.60, method=first_word_match)",4173.0,Kevtan,tier3_nearest,12.62
+Garethia Dam,23.6711,77.5131,Madhya Pradesh,Local,14.822,1991.0,"NRLD_2019 (score=0.60, method=first_word_match)",4198.0,Baen,tier3_nearest,7.54
+Gambhir (Phe) Dam,23.2081,75.635,Madhya Pradesh,Gambhir,63.72,1991.0,"NRLD_2019 (score=0.60, method=first_word_match)",3655.0,Gambhir,tier1_existing,0.047064
+Tons Barrage(Mpseb) Dam,24.7036,81.1506,Madhya Pradesh,Tons,35.427,,Not found,4069.0,Asrawal,tier1_existing,0.16461299999999998
+Umarhar Dam,24.2117,82.3644,Madhya Pradesh,Local,1.225,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4335.0,Gopat,tier3_nearest,7.54
+Govindpura Dam,24.0867,77.2767,Madhya Pradesh,Local,0.797,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",3776.0,Parbati,tier3_nearest,9.47
+Bori Dam,23.4039,76.2297,Madhya Pradesh,Local,1.147,1927.0,"NRLD_2019 (score=0.60, method=first_word_match)",3594.0,Lakundar,tier1_existing,1.778442
+Jhamdhar Dam,24.0639,81.8161,Madhya Pradesh,Local,1.522,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4332.0,Gopat,tier3_nearest,9.32
+Korar Dam,24.3558,81.9658,Madhya Pradesh,Local,2.019,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4334.0,Gopat,tier3_nearest,9.05
+Bishanda Dam,24.3806,81.9253,Madhya Pradesh,Bisandha,6.539,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4057.0,Son,tier3_nearest,9.34
+Manikheda Dam,23.6611,77.2056,Madhya Pradesh,Local,3.808,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,4.04
+Sahmsherpura Dam,23.8731,77.0892,Madhya Pradesh,Puchi,7.264,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,9.87
+Shankarpur Dam,23.4958,76.2444,Madhya Pradesh,Local,0.6,1993.0,"NRLD_2019 (score=0.60, method=first_word_match)",3594.0,Lakundar,tier1_existing,0.04995
+Mungatola Dam,23.8939,81.2011,Madhya Pradesh,Local,1.457,1994.0,"NRLD_2019 (score=0.60, method=first_word_match)",4105.0,Son,tier1_existing,1.034187
+Upper Chraipani Dam,23.9036,79.6022,Madhya Pradesh,Local,1.28,1994.0,"NRLD_2019 (score=0.60, method=first_word_match)",4290.0,Bearma,tier3_nearest,10.14
+Larpur Dam,23.1942,77.4786,Madhya Pradesh,Larpur Nalla,6.13,1994.0,"NRLD_2019 (score=0.60, method=first_word_match)",4191.0,Ajmar,tier3_nearest,4.99
+Thara Dam,24.9022,79.685,Madhya Pradesh,Local,0.135,1995.0,"NRLD_2019 (score=0.60, method=first_word_match)",4278.0,Banne,tier3_nearest,12.37
+Ganjari Dam,24.0753,81.6569,Madhya Pradesh,Local,2.84,1995.0,"NRLD_2019 (score=0.60, method=first_word_match)",4353.0,Banas,tier3_nearest,9.96
+Renjhai Dam,25.7181,77.4639,Madhya Pradesh,Local,1.91,1995.0,"NRLD_2019 (score=0.60, method=first_word_match)",3453.0,Parbati,tier3_nearest,5.95
+Budhna Nalla Dam,25.0131,78.0556,Madhya Pradesh,Budhna,15.11,1995.0,"NRLD_2019 (score=0.60, method=first_word_match)",3478.0,Betwa,tier3_nearest,15.46
+Bandia Nalla Dam,24.7578,77.1847,Madhya Pradesh,Negri,14.76,1995.0,"NRLD_2019 (score=0.60, method=first_word_match)",3340.0,Parbati,tier1_existing,1.414362
+Bairar Dam,25.7186,77.4653,Madhya Pradesh,Local,6.45,1996.0,"NRLD_2019 (score=0.60, method=first_word_match)",3453.0,Parbati,tier3_nearest,5.8
+Guradiat Project Dam,23.1669,76.3125,Madhya Pradesh,Local,1.031,1997.0,"NRLD_2019 (score=0.60, method=first_word_match)",3578.0,Kali Sindh,tier3_nearest,9.19
+Rupaniyakhal Dam,23.795,75.1714,Madhya Pradesh,Local,13.57,1997.0,"NRLD_2019 (score=0.60, method=first_word_match)",3649.0,Pingla,tier3_nearest,7.26
+Guradia Surdas Dam,23.1567,76.3036,Madhya Pradesh,Kalisindh,3.18,1997.0,"NRLD_2019 (score=0.60, method=first_word_match)",3578.0,Kali Sindh,tier3_nearest,9.02
+Piplai Dam,23.2933,77.8247,Madhya Pradesh,Local,1.92,1998.0,"NRLD_2019 (score=0.60, method=first_word_match)",4194.0,Betwa,tier3_nearest,12.16
+Bamera Dam,23.7775,80.9869,Madhya Pradesh,Halphal,2.83,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",4102.0,Bhandar,tier3_nearest,15.27
+Mahuwa Khera Dam,23.7644,78.6492,Madhya Pradesh,Local,,1999.0,"NRLD_2019 (score=0.60, method=first_word_match)",4143.0,Dhasan,tier3_nearest,8.78
+Imlikheda Dam,23.3883,76.8592,Madhya Pradesh,Local,1.519,2000.0,"NRLD_2019 (score=0.60, method=first_word_match)",3586.0,Parbati,tier3_nearest,13.13
+Jojharpur Dam,23.3544,78.1708,Madhya Pradesh,Local,2.73,2000.0,"NRLD_2019 (score=0.60, method=first_word_match)",4172.0,Bina,tier3_nearest,15.65
+Mundri Dam,24.1875,75.1253,Madhya Pradesh,Local,3.554,2000.0,"NRLD_2019 (score=0.60, method=first_word_match)",3635.0,Sau,tier3_nearest,3.64
+Lakhundar Dam,23.2436,76.2578,Madhya Pradesh,Lakhunder,32.15,2000.0,"NRLD_2019 (score=0.60, method=first_word_match)",3594.0,Lakundar,tier3_nearest,14.97
+Kathotia Dam,23.4461,81.4419,Madhya Pradesh,Local,1.115,2001.0,"NRLD_2019 (score=0.60, method=first_word_match)",4385.0,Kunu,tier3_nearest,3.87
+Pondi Dam,22.8717,81.7583,Madhya Pradesh,Local,0.74,1974.0,"NRLD_2019 (score=0.60, method=first_word_match)",4378.0,Tipan,tier3_nearest,15.06
+Ahilo Dam,24.1753,82.0575,Madhya Pradesh,Local,1.46,2001.0,"NRLD_2019 (score=0.60, method=first_word_match)",4333.0,Gopat,tier3_nearest,8.61
+Deorikheda Dam,24.0175,77.1125,Madhya Pradesh,Local,1.33,2001.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,6.56
+Sarwankheda Dam,23.5731,75.5506,Madhya Pradesh,Local,1.884,2001.0,"NRLD_2019 (score=0.60, method=first_word_match)",3631.0,Shipra,tier3_nearest,5.38
+Bagla Dam,23.3592,75.4561,Madhya Pradesh,Local,3.5,2001.0,"NRLD_2019 (score=0.60, method=first_word_match)",3658.0,Chambal,tier1_existing,2.184924
+Dudhi Dam,23.6647,76.9194,Madhya Pradesh,Dudhi,30.77,2001.0,"NRLD_2019 (score=0.60, method=first_word_match)",3583.0,Dudhi,tier2_river_name,8.37
+Teergarh Dam,23.9642,79.7222,Madhya Pradesh,Local,7.915,2001.0,"NRLD_2019 (score=0.60, method=first_word_match)",4292.0,Bearma,tier3_nearest,3.78
+Khadda Dam,23.9661,81.4672,Madhya Pradesh,Kevatmara,1.625,2002.0,"NRLD_2019 (score=0.60, method=first_word_match)",4351.0,Banas,tier3_nearest,4.47
+Semariya Dam,23.1828,81.3919,Madhya Pradesh,Utaila,1.008,2002.0,"NRLD_2019 (score=0.60, method=first_word_match)",4384.0,Son,tier3_nearest,7.11
+Manki Dam,23.9083,77.0431,Madhya Pradesh,Ghorapachhar Nalla,0.789,2002.0,"NRLD_2019 (score=0.60, method=first_word_match)",3587.0,Parbati,tier3_nearest,13.53
+Phoodra Dam,23.1361,76.6083,Madhya Pradesh,Local,1.038,2002.0,"NRLD_2019 (score=0.60, method=first_word_match)",3577.0,Newaj,tier1_existing,1.1736030000000002
+Tandikhurd Dam,24.0361,76.8294,Madhya Pradesh,Local,1.407,2002.0,"NRLD_2019 (score=0.60, method=first_word_match)",3588.0,Ghora Pachhar,tier3_nearest,2.59
+Banskheda Dam,23.8319,76.7242,Madhya Pradesh,Local,3.484,2002.0,"NRLD_2019 (score=0.60, method=first_word_match)",3582.0,Newaj,tier3_nearest,2.75
+Piplyakala Dam,23.9744,76.4714,Madhya Pradesh,Gunjari,4.824,2002.0,"NRLD_2019 (score=0.60, method=first_word_match)",3571.0,Ghar Ganga,tier3_nearest,12.22
+Rajiv Sagar (Maksudangarh) Dam,24.0681,77.3114,Madhya Pradesh,Bhader,17.675,,Not found,3775.0,Parbati,tier3_nearest,12.36
+Bhaisatori Dam,24.8717,77.1961,Madhya Pradesh,Sukait,8.86,2002.0,"NRLD_2019 (score=0.60, method=first_word_match)",3340.0,Parbati,tier3_nearest,10.52
+Chambleshwar Dam,24.6569,75.1697,Madhya Pradesh,Rupa Nadi,2.03,2002.0,"NRLD_2019 (score=0.60, method=first_word_match)",3609.0,Khoki,tier3_nearest,7.83
+Rajli Dam,24.2733,81.1789,Madhya Pradesh,Rajali Nala,1.468,2003.0,"NRLD_2019 (score=0.60, method=first_word_match)",4077.0,Tons,tier3_nearest,11.22
+Deori Dam,24.1475,81.3375,Madhya Pradesh,Local,1.4,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4374.0,Son,tier1_existing,0.397824
+Junapani Dam,24.1625,75.6592,Madhya Pradesh,Local,1.58,2003.0,"NRLD_2019 (score=0.60, method=first_word_match)",3604.0,Ahu,tier3_nearest,12.23
+Ganeshpura Dam,24.1158,76.7781,Madhya Pradesh,Local,2.148,2003.0,"NRLD_2019 (score=0.60, method=first_word_match)",3588.0,Ghora Pachhar,tier3_nearest,2.42
+Ghoghatpur Dam,24.1819,76.2733,Madhya Pradesh,Local,3.881,2003.0,"NRLD_2019 (score=0.60, method=first_word_match)",3596.0,Kali Sindh,tier3_nearest,5.72
+Rajghat Sagar Dam,23.7244,78.7544,Madhya Pradesh,Bebus,96.0,2003.0,"NRLD_2019 (score=0.60, method=first_word_match)",4147.0,Bewas,tier1_existing,0.074925
+Madhar Dam,25.0833,77.8178,Madhya Pradesh,Ghataprabha,12.543,2003.0,"NRLD_2019 (score=0.60, method=first_word_match)",3488.0,Aerma,tier3_nearest,9.01
+Parariya Dam,24.7914,79.6103,Madhya Pradesh,Bijauri,3.58,2003.0,"NRLD_2019 (score=0.60, method=first_word_match)",4278.0,Banne,tier3_nearest,11.34
+Padaria Dam,23.4231,78.2783,Madhya Pradesh,Local,0.942,2004.0,"NRLD_2019 (score=0.60, method=first_word_match)",4172.0,Bina,tier3_nearest,5.21
+Sagonikala Dam,23.5681,77.4594,Madhya Pradesh,Local,2.37,2004.0,"NRLD_2019 (score=0.60, method=first_word_match)",4192.0,Halali,tier3_nearest,10.15
+Amalya Dam,24.0303,82.4142,Madhya Pradesh,Local,3.553,,Not found,4336.0,Mayar,tier3_nearest,10.77
+Sehra Dam,23.8317,81.7672,Madhya Pradesh,Local,7.73,,Not found,4344.0,Mawai,tier3_nearest,8.98
+Bhensrod Dam,23.4158,76.5369,Madhya Pradesh,Local,2.55,1860.0,"NRLD_2019 (score=0.60, method=first_word_match)",3578.0,Kali Sindh,tier3_nearest,10.24
+Mahendra Sagar Dam,25.5069,76.7836,Madhya Pradesh,Local,,,Not found,3330.0,Kadwal,tier3_nearest,5.48
+Nanukhedi Dam,23.6525,76.1367,Madhya Pradesh,Local,1.473,,Not found,3597.0,Tila,tier3_nearest,7.76
+Ghoora Dam,24.9683,79.9594,Madhya Pradesh,Local,3.499,2000.0,"NRLD_2019 (score=0.60, method=first_word_match)",4282.0,Kutni,tier3_nearest,3.01
+Deep Sagar Dam,24.9136,78.8661,Madhya Pradesh,Local,1.56,,Not found,4165.0,Jamni,tier3_nearest,11.5
+Deri Dam,24.9022,79.2494,Madhya Pradesh,Gorar,2.37,,Not found,4141.0,Dhasan,tier3_nearest,8.83
+Katra Dam,24.19,80.2569,Madhya Pradesh,Ghatprabha,2.57,,Not found,4299.0,Ken,tier3_nearest,9.86
+Sadwa Dam,24.4664,79.2797,Madhya Pradesh,Ghataprabha,1.96,,Not found,4150.0,Kathan,tier3_nearest,5.19
+Bagadih Dam,24.2275,82.3367,Madhya Pradesh,Local,2.005,,Not found,4335.0,Gopat,tier3_nearest,6.0
+Pokharidul Dam,24.2006,82.265,Madhya Pradesh,Local,113.0,,Not found,4335.0,Gopat,tier1_existing,0.07214999999999999
+Lashuna Dam,24.0583,81.0833,Madhya Pradesh,Local,1.579,,Not found,4375.0,Son,tier3_nearest,6.02
+Chhotakidhar Dam,23.9642,82.1303,Madhya Pradesh,Local,1.07,,Not found,4330.0,Gopat,tier3_nearest,2.29
+Deori Dam,24.1958,82.1347,Madhya Pradesh,Local,4.76,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4335.0,Gopat,tier3_nearest,11.58
+Jhirrya Dam,24.0761,82.1372,Madhya Pradesh,Local,9.8,,Not found,4330.0,Gopat,tier3_nearest,8.23
+Haridi Dam,23.2989,81.4447,Madhya Pradesh,Local,2.182,,Not found,4384.0,Son,tier3_nearest,2.76
+Kuni Dam,23.4847,81.4522,Madhya Pradesh,Local,2.014,,Not found,4385.0,Kunu,tier3_nearest,6.36
+Barka Dam,24.1736,82.1369,Madhya Pradesh,Local,3.77,,Not found,4335.0,Gopat,tier3_nearest,10.69
+Mithori Dam,23.1825,81.3925,Madhya Pradesh,Local,3.599,,Not found,4384.0,Son,tier3_nearest,7.07
+Mahan Dam,24.22,81.5447,Madhya Pradesh,Mahan,104.0,2009.0,"NRLD_2019 (score=0.60, method=first_word_match)",4354.0,Banas,tier1_existing,0.323787
+Ban Sagar Dam,24.1856,81.2878,Madhya Pradesh,Sone,6370.0,2006.0,"NRLD_2019 (score=0.60, method=first_word_match)",4375.0,Son,tier1_existing,0.25752
+Mudiakheri Dam,23.3494,78.1086,Madhya Pradesh,Local,4.736,,Not found,4196.0,Betwa,tier3_nearest,16.26
+Nandkho Dam,23.2508,77.7286,Madhya Pradesh,Local,0.92,,Not found,4194.0,Betwa,tier3_nearest,4.9
+Jhikri Dam,22.9378,76.3928,Madhya Pradesh,Local,1.327,,Not found,3593.0,Kali Sindh,tier3_nearest,4.94
+Rajsamand Dam,25.0611,73.9006,Rajasthan,Chambal,107.15,1676.0,"NRLD_2019 (score=0.60, method=first_word_match)",3708.0,Gomti,tier1_existing,0.631701
+Swaroop Sagar Dam,24.5917,73.6853,Rajasthan,Sisarma,136.8,,Not found,3750.0,Ahar,tier1_existing,1.876788
+Hingonia Dam,26.7814,75.4603,Rajasthan,Bandi,7.5,1862.0,"NRLD_2019 (score=0.60, method=first_word_match)",3399.0,Mashi,tier1_existing,0.002664
+Chandrana Dam,26.9814,76.2306,Rajasthan,Banganga,4.92,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",3398.0,Banganga,tier1_existing,0.12820499999999999
+Kharad Dam,27.0986,76.1303,Rajasthan,Banganga,9.19,1877.0,"NRLD_2019 (score=0.60, method=first_word_match)",3398.0,Banganga,tier2_river_name,8.46
+Kalakh Sagar Dam,26.9764,75.4522,Rajasthan,Bandi River,20.66,1883.0,"NRLD_2019 (score=0.60, method=first_word_match)",3417.0,Mashi,tier1_existing,0.16838699999999998
+Tordi Sagar Dam,26.2115,75.4169,Rajasthan,Sohadra,47.14,1887.0,"NRLD_2019 (score=0.60, method=first_word_match)",3428.0,Sohadra,tier1_existing,0.005216999999999999
+Madho Sagar Dam,26.8422,76.6506,Rajasthan,Banganga,22.61,1887.0,"NRLD_2019 (score=0.60, method=first_word_match)",3523.0,Banganga,tier3_nearest,15.74
+Fateh Sagar Dam,24.6011,73.6794,Rajasthan,Berach,12.09,1889.0,"NRLD_2019 (score=0.60, method=first_word_match)",3750.0,Ahar,tier1_existing,1.9321769999999998
+Buchara Dam,27.5908,75.9686,Rajasthan,Sabi,16.36,1889.0,"NRLD_2019 (score=0.60, method=first_word_match)",3244.0,Sota,tier1_existing,0.142413
+Chaparwara Dam,26.6214,75.2575,Rajasthan,Banas,35.0,1894.0,"NRLD_2019 (score=0.60, method=first_word_match)",3445.0,Mashi,tier1_existing,1.091019
+Sainthal Sagar Dam,27.0303,76.2608,Rajasthan,Banganga,13.73,,Not found,3519.0,Sanwan,tier1_existing,0.502275
+Sheel Ki Dungri Dam,26.6375,75.9528,Rajasthan,Dhudh,4.17,1900.0,"NRLD_2019 (score=0.60, method=first_word_match)",3396.0,Dhund,tier1_existing,1.57287
+Ram Garh Dam,27.0456,76.06,Rajasthan,Banganga,75.0,1901.0,"NRLD_2019 (score=0.60, method=first_word_match)",3398.0,Banganga,tier1_existing,0.018315
+Mandal Dam,25.4514,74.5672,Rajasthan,Local Nalla,13.8,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",3718.0,Kothari,tier3_nearest,4.55
+Dheel Dam,26.2233,76.1172,Rajasthan,Morel,27.73,1911.0,"NRLD_2019 (score=0.60, method=first_word_match)",3406.0,Dhil,tier1_existing,0.04995
+Bhopal Sagar Dam,24.8522,74.1992,Rajasthan,Berach,18.54,1936.0,"NRLD_2019 (score=0.60, method=first_word_match)",3728.0,Jashma,tier1_existing,0.086358
+Chittoli Dam,27.4931,76.1319,Rajasthan,Sabi,24.536,1950.0,"NRLD_2019 (score=0.60, method=first_word_match)",3245.0,Sota,tier3_nearest,5.39
+Govta Dam,25.1692,75.0522,Rajasthan,Manali,10.48,1955.0,"NRLD_2019 (score=0.60, method=first_word_match)",3716.0,Menali,tier1_existing,0.15173699999999998
+Needar Dam,26.3197,77.1883,Rajasthan,Odher,9.795,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",3339.0,Chambal,tier3_nearest,9.21
+Patan (Deosagar) Dam,25.9158,74.3625,Rajasthan,Local Nalla,6.94,,Not found,3693.0,Khari,tier3_nearest,9.72
+Surwal Dam,26.0803,76.3417,Rajasthan,Gambhir,25.983,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",3413.0,Gambhir,tier1_existing,0.698523
+Bagolia Dam,24.8142,73.9536,Rajasthan,Berach,19.42,1956.0,"NRLD_2019 (score=0.60, method=first_word_match)",3752.0,Berach,tier1_existing,0.10722599999999999
+Kalisil Dam,26.2706,76.7672,Rajasthan,Kalisil Banas,41.7,1956.0,"NRLD_2019 (score=0.60, method=first_word_match)",3338.0,Karisil,tier1_existing,0.16461299999999998
+Man Sarowar Dam,25.9228,76.4397,Rajasthan,Chambal,17.487,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",3747.0,Chambal,tier2_river_name,9.96
+Paibala Pura Dam,25.6989,75.8739,Rajasthan,Mej River,12.96,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",3786.0,Machhli,tier3_nearest,9.81
+Juggar Dam,26.72,77.0961,Rajasthan,Juggar Banas,34.97,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",3355.0,Sesar,tier3_nearest,7.29
+Bundika Gothra Dam,25.6917,75.6481,Rajasthan,Mej River,28.4,,Not found,3441.0,Bajyan,tier1_existing,0.342768
+Sareri Dam,25.6936,74.5694,Rajasthan,Mansi,55.77,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",3695.0,Mansi,tier1_existing,0.395049
+Khari Dam,25.7058,74.2817,Rajasthan,Khari,38.96,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",3691.0,Khari,tier1_existing,0.191031
+Arwar Dam,25.8144,74.8075,Rajasthan,Khari,47.91,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",3695.0,Mansi,tier1_existing,0.6358079999999999
+Pgachki Bawri Dam,25.6367,75.4456,Rajasthan,Began,5.62,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",3727.0,Mej,tier3_nearest,14.65
+Kala Bhata Dam,25.6206,74.0817,Rajasthan,Khari,4.25,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",3691.0,Khari,tier1_existing,2.055387
+Bhimlat Dam,25.2986,75.4014,Rajasthan,Bhimlat,11.69,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",3783.0,Manoli,tier3_nearest,10.42
+Chandrabhaga Dam,25.1717,74.0736,Rajasthan,Chandrabhaga,9.96,,Not found,3709.0,Chandrabhaga,tier1_existing,0.22755000000000003
+Nandsamand Dam,24.9272,73.7811,Rajasthan,Banas,21.22,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",3741.0,Banas,tier1_existing,0.002664
+Meja Dam,25.3931,74.54,Rajasthan,Kothari,84.0,1987.0,"NRLD_2019 (score=0.60, method=first_word_match)",3718.0,Kothari,tier1_existing,0.11255399999999999
+Gudha Dam,25.4933,75.4586,Rajasthan,Mejchambal,95.58,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",3727.0,Mej,tier1_existing,0.350538
+Matrikundiya Dam,25.0372,74.3147,Rajasthan,Banas,50.67,1991.0,"NRLD_2019 (score=0.60, method=first_word_match)",3712.0,Banas,tier1_existing,0.14918399999999998
+Gambhiri Dam,24.7025,74.7306,Rajasthan,Gambhiri,54.98,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",3738.0,Gambhiri,tier1_existing,0.018315
+Nagdi Dam,25.6156,75.2856,Rajasthan,Nagdi,5.15,1959.0,"NRLD_2019 (score=0.60, method=first_word_match)",3702.0,Banas,tier3_nearest,5.88
+Morel Dam,26.4467,76.3375,Rajasthan,Morel,76.635,1959.0,"NRLD_2019 (score=0.60, method=first_word_match)",3402.0,Morel,tier1_existing,0.395049
+Galwa Dam,25.8822,76.0176,Rajasthan,Galwa,48.73,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",3435.0,Galwa,tier1_existing,0.881673
+Mashi Dam,26.4167,75.7667,Rajasthan,Mashi,48.127,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",3424.0,Mashi,tier1_existing,0.80142
+Kota Barrage Dam,25.1764,75.8253,Rajasthan,Chambal,112.06,,Not found,3618.0,Chambal,tier1_existing,0.086358
+Atawara Dam,25.3507,74.1797,Rajasthan,Banas,5.235,1961.0,"NRLD_2019 (score=0.60, method=first_word_match)",3726.0,Bahmnai,tier3_nearest,8.02
+Banakiya Dam,24.905,74.4956,Rajasthan,Local Nalla,9.43,1962.0,"NRLD_2019 (score=0.60, method=first_word_match)",3735.0,Berach,tier3_nearest,2.41
+Alnia Dam,25.0039,75.8772,Rajasthan,Alnia,43.72,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",3621.0,Alnia,tier3_nearest,14.52
+Parbati Dam,26.6281,77.4469,Rajasthan,Parbati,115.167,1963.0,"NRLD_2019 (score=0.60, method=first_word_match)",3358.0,Parbati,tier1_existing,0.355866
+Gadola Dam,24.1306,74.8325,Rajasthan,Local Nalla,5.07,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",3642.0,Retam,tier3_nearest,10.11
+Kaladeh Dam,24.98,74.0789,Rajasthan,Local Nallah,2.04,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",3711.0,Banas,tier3_nearest,9.12
+Berach/Vallabh Nagar Dam,24.6556,73.9883,Rajasthan,Berach,30.46,1972.0,Wikipedia,3751.0,Berach,tier1_existing,0.180486
+Ladki Dam,25.4122,74.0786,Rajasthan,Kothari,3.795,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",3690.0,Kothari,tier2_river_name,7.16
+Ranapratap Sager Dam,24.9169,75.5814,Rajasthan,Chambal,2898.69,1970.0,Wikipedia,3615.0,Chambal,tier1_existing,0.06282599999999999
+Orai Dam,25.0361,74.8456,Rajasthan,Orai,35.28,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",3717.0,Berach,tier3_nearest,2.2
+Badgaon Dam,24.7081,74.0892,Rajasthan,Berach,31.52,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",3731.0,Berach,tier1_existing,0.07214999999999999
+Jawaharsagar Dam,25.0372,75.6778,Rajasthan,Chambal,67.07,1972.0,"NRLD_2019 (score=0.60, method=first_word_match)",3618.0,Chambal,tier1_existing,0.047064
+Panchana Dam,26.5625,77.005,Rajasthan,Gambhiri,54.95,2006.0,"NRLD_2019 (score=0.60, method=first_word_match)",3365.0,Gambhir,tier1_existing,0.0
+Morasagar Dam,26.6644,76.5394,Rajasthan,Banas,12.93,1934.0,"NRLD_2019 (score=0.60, method=first_word_match)",3403.0,Kareli,tier3_nearest,14.03
+Abhaya Pura Dam,25.3031,75.4469,Rajasthan,Bhimlat,7.44,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",3783.0,Manoli,tier3_nearest,6.47
+Jetpura Dam,25.25,75.2061,Rajasthan,Unli,18.54,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",3723.0,Unli,tier3_nearest,11.91
+Borda Dam,24.9983,74.5639,Rajasthan,Local Nallah,5.04,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",3736.0,Berach,tier3_nearest,11.63
+Gopalpura Dam,25.1644,76.7317,Rajasthan,Chambal,32.65,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3766.0,Khul,tier3_nearest,4.71
+Kanyakheri Dam,25.2536,74.6242,Rajasthan,Local Nalla,4.33,1987.0,"NRLD_2019 (score=0.60, method=first_word_match)",3714.0,Banas,tier1_existing,2.124873
+Modia Mahadev Dam,24.8447,74.7842,Rajasthan,Local Nalla,3.885,,Not found,3737.0,Gambhiri,tier3_nearest,12.68
+Jhadol Dam,25.4431,74.9111,Rajasthan,Banas,10.335,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",3703.0,Banas,tier2_river_name,6.84
+Titora Dam,25.375,75.2294,Rajasthan,Local Nalla,1.358,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",3727.0,Mej,tier3_nearest,4.68
+Anwasa Dam,25.2453,75.1219,Rajasthan,Local Nallah,2.82,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",3723.0,Unli,tier3_nearest,4.9
+Devliya Dam,25.2781,74.1433,Rajasthan,Local Nallah,2.38,1982.0,"NRLD_2019 (score=0.60, method=first_word_match)",3709.0,Chandrabhaga,tier3_nearest,11.82
+Mandol Dam,25.4522,74.5656,Rajasthan,Banas,6.8,,Not found,3718.0,Kothari,tier3_nearest,4.72
+Damti Kokra Dam,25.1519,75.1397,Rajasthan,Local Nalla,4.73,1989.0,"NRLD_2019 (score=0.60, method=first_word_match)",3716.0,Menali,tier3_nearest,7.42
+Saran Kheri Dam,24.4669,76.145,Rajasthan,Jahugiya,6.23,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",3563.0,Kali Sindh,tier3_nearest,7.38
+Wagon Dam,24.4947,74.4078,Rajasthan,Wagon,40.65,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",3730.0,Berach,tier3_nearest,5.85
+Panghatiya Dam,25.8775,74.4194,Rajasthan,Local Nalla,1.274,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",3693.0,Khari,tier3_nearest,2.66
+Luharia Dam,24.7086,74.3339,Rajasthan,Local Nalla,2.917,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",3729.0,Berach,tier3_nearest,2.64
+Kothari Stage 1 Dam,25.3169,74.9958,Rajasthan,Kothari,26.05,,Not found,3718.0,Kothari,tier1_existing,0.086358
+Barkheri Dam,24.8714,74.7278,Rajasthan,Local,1.598,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",3737.0,Gambhiri,tier3_nearest,8.19
+Bassi Dam,25.0317,74.8228,Rajasthan,Col Nala,23.2,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",3717.0,Berach,tier1_existing,0.17005199999999998
+Pachanpura Dam,25.07,75.2872,Rajasthan,Local Nalla,10.05,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",3614.0,Chambal,tier3_nearest,11.45
+Bhimsagar Dam,24.5625,76.3344,Rajasthan,Kalisindh,76.55,1997.0,"NRLD_2019 (score=0.60, method=first_word_match)",3566.0,Ujar,tier1_existing,0.020313
+Sawan Bhado Dam,24.8217,76.0958,Rajasthan,Local,29.82,2001.0,"NRLD_2019 (score=0.60, method=first_word_match)",3560.0,Amjar,tier3_nearest,9.72
+Patiyal Dam,25.21,75.2406,Rajasthan,Banas,1.708,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",3723.0,Unli,tier3_nearest,16.83
+Sushil Sagar Dam,25.3219,75.3297,Rajasthan,Local Nallah,2.202,1991.0,"NRLD_2019 (score=0.60, method=first_word_match)",3727.0,Mej,tier3_nearest,10.08
+Shiv-Sagar Dam,25.2519,75.3281,Rajasthan,Mej River,2.095,1993.0,"NRLD_2019 (score=0.60, method=first_word_match)",3727.0,Mej,tier3_nearest,16.83
+Dorai Dam,24.9378,74.9572,Rajasthan,Brahmani,8.5,1995.0,"NRLD_2019 (score=0.60, method=first_word_match)",3614.0,Chambal,tier3_nearest,15.74
+Bilas Dam,25.0472,76.8283,Rajasthan,Bilas,28.9,1996.0,"NRLD_2019 (score=0.60, method=first_word_match)",3763.0,Bilas,tier2_river_name,3.77
+Pitha Ka Mund Dam,25.2433,75.1225,Rajasthan,Banas,1.89,1997.0,"NRLD_2019 (score=0.60, method=first_word_match)",3724.0,Banas,tier2_river_name,7.19
+Sanwariya Sarowar Dam,24.5861,74.4011,Rajasthan,Erau,5.18,,Not found,3730.0,Berach,tier3_nearest,6.66
+Jude Ka Naka Dam,25.3697,74.7125,Rajasthan,Local Nalla,1.78,1999.0,"NRLD_2019 (score=0.60, method=first_word_match)",3718.0,Kothari,tier1_existing,0.012987
+Motipura Dam,25.7078,74.4742,Rajasthan,Local Nallah,1.16,1999.0,"NRLD_2019 (score=0.60, method=first_word_match)",3695.0,Mansi,tier3_nearest,8.09
+Bari Mansarowar Dam,24.5164,74.6564,Rajasthan,Local Nalla,9.482,,Not found,3739.0,Kadmali,tier3_nearest,10.86
+Bisalpur Dam,25.9247,75.4558,Rajasthan,Banas,1095.84,1999.0,"NRLD_2019 (score=0.60, method=first_word_match)",3432.0,Banas,tier1_existing,0.222333
+Navratan Sagar Dam,25.5178,75.3422,Rajasthan,Local Nallah,2.27,,Not found,3727.0,Mej,tier3_nearest,4.68
+Kanota Dam,26.9128,75.9325,Rajasthan,Dhoond,14.13,2001.0,"NRLD_2019 (score=0.60, method=first_word_match)",3397.0,Dhund,tier1_existing,0.023532
+Ruparel Dam,25.0592,74.9506,Rajasthan,Ruparel,9.71,2004.0,"NRLD_2019 (score=0.60, method=first_word_match)",3715.0,Berach,tier3_nearest,11.79
+Chauli Dam,24.2458,76.0928,Rajasthan,Chauli,53.5,2006.0,"NRLD_2019 (score=0.60, method=first_word_match)",3570.0,Chauli,tier2_river_name,2.41
+Chhapi Dam,24.3419,76.4719,Rajasthan,Chhapi,82.57,2005.0,"NRLD_2019 (score=0.60, method=first_word_match)",3572.0,Chhapi,tier1_existing,0.065379
+Lassaria Dam,26.0483,75.1814,Rajasthan,Dai,11.49,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",3430.0,Dai,tier1_existing,0.041847
+Udai Sagar Dam,24.5783,73.8228,Rajasthan,Berach,31.14,1585.0,"NRLD_2019 (score=0.60, method=first_word_match)",3750.0,Ahar,tier1_existing,0.13508699999999998
+Uncha Dam,24.5836,74.6225,Rajasthan,Local Nalla,2.605,1984.0,"NRLD_2019 (score=0.60, method=first_word_match)",3739.0,Kadmali,tier3_nearest,8.92
+Mundliya Kheri Dam,24.525,76.1556,Rajasthan,Local Nallah,4.42,,Not found,3563.0,Kali Sindh,tier3_nearest,6.98
+Jaisamand Dam,27.4919,76.5864,Rajasthan,Ruparail,26.95,1910.0,"NRLD_2019 (score=0.60, method=first_word_match)",3520.0,Barah,tier3_nearest,5.04
+Soniyana Dam,25.1406,74.6686,Rajasthan,Local Nallah,6.8,,Not found,3714.0,Banas,tier3_nearest,8.38
+Nahar Sagar Dam,25.7361,74.9519,Rajasthan,Sameliya,24.63,1909.0,"NRLD_2019 (score=0.60, method=first_word_match)",3699.0,Sameliya,tier1_existing,0.264291
+Kukas Dam,27.0339,75.8871,Rajasthan,Local,43.75,1901.0,"NRLD_2019 (score=0.60, method=first_word_match)",3397.0,Dhund,tier3_nearest,13.02
+Sankal Khera Dam,24.8147,74.75,Rajasthan,Local Nallah,3.15,2008.0,"NRLD_2019 (score=0.60, method=first_word_match)",3737.0,Gambhiri,tier3_nearest,8.02
+Lhasi Dam,24.5828,76.7,Rajasthan,Lhasi,30.8,1619.0,"NRLD_2019 (score=0.60, method=first_word_match)",3755.0,Andheri,tier3_nearest,5.99
+Piplad Dam,24.4067,75.8892,Rajasthan,Piplad,24.14,2011.0,"NRLD_2019 (score=0.60, method=first_word_match)",3602.0,Ahu,tier3_nearest,4.89
+Takli Dam,24.7017,75.8794,Rajasthan,Takli,33.74,,Not found,3560.0,Amjar,tier1_existing,0.020313
+Gagrin Dam,24.1264,75.9006,Rajasthan,Ahu,52.6,1956.0,Wikipedia,3600.0,Ahu,tier1_existing,1.278387
+Benthali Dam,24.6211,76.9722,Rajasthan,Benthali,37.28,1965.0,"NRLD_2019 (score=0.60, method=first_word_match)",3780.0,Parbati,tier3_nearest,9.37
+Chakan Dam,25.8006,76.2322,Rajasthan,Chakan,12.89,1849.0,"NRLD_2019 (score=0.60, method=first_word_match)",3437.0,Chakan,tier1_existing,0.07214999999999999
+Gararda Dam,25.2839,75.5081,Rajasthan,Gararda,44.38,2010.0,"NRLD_2019 (score=0.60, method=first_word_match)",3783.0,Manoli,tier1_existing,0.020313
+Gulandi Dam,24.3686,76.5817,Rajasthan,Gulandi,13.37,,Not found,3591.0,Parvan,tier3_nearest,6.49
+Hindlot Dam,24.5603,76.9433,Rajasthan,Retri Nadi,16.18,2008.0,"NRLD_2019 (score=0.60, method=first_word_match)",3778.0,Parbati,tier3_nearest,11.71
+Deopura Dam,25.8018,76.3431,Rajasthan,Nahari,8.188,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",3437.0,Chakan,tier3_nearest,4.06
+Silibari Dam,27.3342,76.5469,Rajasthan,Roop Rail,5.634,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",3520.0,Barah,tier3_nearest,8.04
+Reriya Dam,27.1269,76.5883,Rajasthan,Sawa,5.295,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",3510.0,Banganga,tier3_nearest,3.22
+Baretha Bund Dam,26.8975,77.3725,Rajasthan,Gambhiri,52.638,1897.0,"NRLD_2019 (score=0.60, method=first_word_match)",3489.0,Kakund,tier3_nearest,6.93
+Basundni Dam,25.7169,75.1086,Rajasthan,Khari,7.78,1981.0,"NRLD_2019 (score=0.60, method=first_word_match)",3698.0,Khari,tier1_existing,0.264291
+Gosunda Dam,24.8264,74.5233,Rajasthan,Banas,75.47,,Not found,3734.0,Berach,tier1_existing,0.018315
+Bishan Samand Dam,26.8256,76.8294,Rajasthan,Gambhir,115.5,,Not found,3509.0,Gambhir,tier2_river_name,5.1
+Murliya Dam,24.7044,74.6406,Rajasthan,Local Nalla,9.62,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",3737.0,Gambhiri,tier3_nearest,7.77
+Shakargarh Dam,25.4639,75.2831,Rajasthan,Local Nalla,4.306,2000.0,"NRLD_2019 (score=0.60, method=first_word_match)",3727.0,Mej,tier3_nearest,3.97
+Machlana Dam,24.0394,74.93,Rajasthan,Local,4.2,,Not found,3638.0,Sau,tier3_nearest,5.08
+Umed Sagar Dam,25.2006,76.7569,Rajasthan,Khari,18.6,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",3770.0,Khul,tier1_existing,1.7681189999999998
+Kalisindh Dam Phase-I Dam,24.4815,76.2242,Rajasthan,Kalisindh,5437.0,2004.0,Wikipedia,3563.0,Kali Sindh,tier1_existing,0.27727799999999997
+Barwa Sagar Dam,25.3803,78.7478,Uttar Pradesh,Barwa Nala,24.5,1694.0,"NRLD_2019 (score=0.60, method=first_word_match)",3463.0,Betwa,tier3_nearest,6.43
+Magar Pur Dam,25.2875,78.8611,Uttar Pradesh,Local Stream,2.46,1694.0,"NRLD_2019 (score=0.60, method=first_word_match)",3457.0,Betwa,tier3_nearest,14.28
+Pachwara Lake Dam,25.3669,79.0453,Uttar Pradesh,Local,6.15,1694.0,"NRLD_2019 (score=0.60, method=first_word_match)",4137.0,Lakheri,tier3_nearest,11.85
+Parichha Dam,25.5167,78.7792,Uttar Pradesh,Betwa,78.76,1886.0,"NRLD_2019 (score=0.60, method=first_word_match)",3464.0,Betwa,tier1_existing,0.13086899999999999
+Dhekwan Dam,25.1878,78.5458,Uttar Pradesh,Betwa,57.8,1909.0,"NRLD_2019 (score=0.60, method=first_word_match)",4159.0,Betwa,tier1_existing,0.104673
+Pahuj Dam,25.5031,78.535,Uttar Pradesh,Pahuj,18.25,1909.0,"NRLD_2019 (score=0.60, method=first_word_match)",3459.0,Pahuj,tier1_existing,0.27994199999999997
+Sukhra Dam,24.795,82.2767,Uttar Pradesh,Sukhara Nala,7.36,1909.0,"NRLD_2019 (score=0.60, method=first_word_match)",4053.0,Belan,tier3_nearest,3.7
+Lachura Dam,25.3192,79.2794,Uttar Pradesh,Sunhari,20.64,1910.0,"NRLD_2019 (score=0.60, method=first_word_match)",4133.0,Dhasan,tier1_existing,0.290487
+Siori Lake Dam,25.3142,79.0917,Uttar Pradesh,Lakheri,7.82,1911.0,"NRLD_2019 (score=0.60, method=first_word_match)",4128.0,Kurai,tier3_nearest,7.96
+Pahari Dam,25.2322,79.135,Uttar Pradesh,Dhasan,47.8,1912.0,"NRLD_2019 (score=0.60, method=first_word_match)",4130.0,Kurai,tier1_existing,1.8370499999999998
+Gangau Dam,24.6261,79.8592,Madhya Pradesh,Ken,58.472,1915.0,Wikipedia,4274.0,Ken,tier1_existing,0.13508699999999998
+Ghori Dam,24.9364,82.4281,Uttar Pradesh,Ghori,13.79,1915.0,"NRLD_2019 (score=0.60, method=first_word_match)",4055.0,Belan,tier3_nearest,7.78
+Kotra Khambha Dam,25.2233,81.4247,Uttar Pradesh,Harai,3.75,1915.0,"NRLD_2019 (score=0.60, method=first_word_match)",4232.0,Yamuna,tier3_nearest,4.87
+Khapatia Dam,25.2136,81.3717,Uttar Pradesh,Borega,8.08,1916.0,"NRLD_2019 (score=0.60, method=first_word_match)",4232.0,Yamuna,tier3_nearest,7.22
+Dhandhraul Dam,24.6094,83.1664,Uttar Pradesh,Ghaghar,144.144,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",3964.0,Son,tier1_existing,0.308469
+Majhgawan Dam,25.1853,79.5406,Uttar Pradesh,Gunchi Nala,25.46,1917.0,"NRLD_2019 (score=0.60, method=first_word_match)",4108.0,Betwa,tier3_nearest,9.63
+Dongia Dam,24.9033,83.0089,Uttar Pradesh,Garai,28.33,1918.0,"NRLD_2019 (score=0.60, method=first_word_match)",3973.0,Belan,tier3_nearest,15.54
+Barwar Dam,25.5147,79.1494,Uttar Pradesh,Bora,33.78,1923.0,"NRLD_2019 (score=0.60, method=first_word_match)",4137.0,Lakheri,tier1_existing,1.810188
+Rampur Kalyangarh Dam,25.0239,81.0361,Uttar Pradesh,Local,1.85,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4079.0,Tons,tier3_nearest,8.09
+Bhainsora Dam,24.7806,83.2203,Uttar Pradesh,Marhwa Nala,19.83,1926.0,"NRLD_2019 (score=0.60, method=first_word_match)",3964.0,Son,tier3_nearest,19.62
+Jaiwanti Dam,25.1856,81.2178,Uttar Pradesh,Jaiwanti,9.43,1928.0,"NRLD_2019 (score=0.60, method=first_word_match)",4256.0,Yamuna,tier3_nearest,10.5
+Khandeha Dam,25.1839,81.2672,Uttar Pradesh,Dashrath Nala,26.94,1929.0,"NRLD_2019 (score=0.60, method=first_word_match)",4256.0,Yamuna,tier3_nearest,13.02
+Aunjhar Dam,25.1872,81.3244,Uttar Pradesh,Aunjhar,6.116,1930.0,"NRLD_2019 (score=0.60, method=first_word_match)",4232.0,Yamuna,tier3_nearest,12.04
+Bardha Dam,25.2203,81.1522,Uttar Pradesh,Bardha Nala,7.8,1930.0,"NRLD_2019 (score=0.60, method=first_word_match)",4256.0,Yamuna,tier3_nearest,7.1
+Kohar Gaddi Dam,27.6153,82.6542,Uttar Pradesh,Bhabhar Nala,12.543,1930.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,23.09
+Raipura Dam,25.2908,79.7922,Uttar Pradesh,Arjun Nala,12.453,1930.0,"NRLD_2019 (score=0.60, method=first_word_match)",4140.0,Urmal,tier3_nearest,17.27
+Nagwa Dam,24.6722,83.3797,Uttar Pradesh,Karmnasa,154.48,1950.0,"NRLD_2019 (score=0.60, method=first_word_match)",4614.0,Son,tier3_nearest,18.03
+Bhonka Dam,25.0683,82.575,Uttar Pradesh,Bhonka,8.5,1951.0,"NRLD_2019 (score=0.60, method=first_word_match)",4038.0,Ganga,tier3_nearest,9.8
+Saprar Dam,25.2089,79.0994,Uttar Pradesh,Saprar,76.2,1952.0,"NRLD_2019 (score=0.60, method=first_word_match)",4128.0,Kurai,tier1_existing,1.281939
+Govind Sagar Dam,24.6742,78.4194,Uttar Pradesh,Shahjad,96.884,1953.0,"NRLD_2019 (score=0.60, method=first_word_match)",4160.0,Jamni,tier1_existing,0.40814700000000004
+Ahraura Dam,25.0,83.0319,Uttar Pradesh,Garai,60.24,1954.0,"NRLD_2019 (score=0.60, method=first_word_match)",3970.0,Karmanasa,tier3_nearest,5.33
+Kabrai Dam,25.4086,79.9731,Uttar Pradesh,Magaria,14.617,1955.0,"NRLD_2019 (score=0.60, method=first_word_match)",4266.0,Shyam,tier3_nearest,7.46
+Naugarh Dam,24.8622,83.3461,Uttar Pradesh,Karmnasa,173.396,1956.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,33.16
+Arjun Dam,25.3864,79.6761,Uttar Pradesh,Arjun,69.206,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",4108.0,Betwa,tier3_nearest,16.25
+Baghel Khand Dam,27.6214,82.4158,Uttar Pradesh,Jamunahwa,2.72,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",4759.0,Sotwa,tier3_nearest,17.89
+Barwatola Dam,24.0614,83.1142,Uttar Pradesh,Local Stream,2.058,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",4610.0,Kanhar,tier3_nearest,14.01
+Rajkhar Dam,24.2286,83.1927,Uttar Pradesh,Local Stream,1.7,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",4611.0,Kanhar,tier3_nearest,7.81
+Rangawan Dam,24.6869,79.8586,Madhya Pradesh,Bannel Nala,164.238,1988.0,Wikipedia,4276.0,Banne,tier1_existing,0.324453
+Banghoghwa Dam,27.7936,82.1375,Uttar Pradesh,Dagwara,2.809,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4750.0,Rapti,tier3_nearest,18.03
+Dhartidolwa Dam,24.45,83.3358,Uttar Pradesh,Local,0.793,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4614.0,Son,tier3_nearest,3.39
+Jirgo Dam,25.0492,82.9533,Uttar Pradesh,Jirgo,150.85,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4039.0,Ganga,tier1_existing,0.795426
+Khairman Dam,27.7686,82.2242,Uttar Pradesh,Henga Nala,5.051,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4750.0,Rapti,tier3_nearest,17.3
+Rampur Dam,27.8539,82.0575,Uttar Pradesh,Goinghawa Nala,10.5,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4750.0,Rapti,tier3_nearest,16.22
+Sirsi Dam,24.8428,82.5003,Uttar Pradesh,Bakhar Nala,215.0,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4051.0,Belan,tier1_existing,0.0
+Upper Khajuri Dam,24.9978,82.6081,Uttar Pradesh,Khajuri,44.74,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4051.0,Belan,tier3_nearest,15.56
+Kota Dam,24.4539,83.1117,Uttar Pradesh,Local,1.983,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",4613.0,Son,tier1_existing,1.257963
+Lakra Dam,24.6411,83.0553,Uttar Pradesh,Local,1.345,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",3964.0,Son,tier3_nearest,2.28
+Salar Pur Dam,25.2008,79.8381,Uttar Pradesh,Kardia,4.02,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",4140.0,Urmal,tier3_nearest,10.17
+Dhora Dam,28.9389,79.5814,Uttar Pradesh,Kichha,45.64,1960.0,"NRLD_2019 (score=0.60, method=first_word_match)",3842.0,Gaula,tier3_nearest,3.57
+Ohen (Balmiki) Dam,25.1353,81.0314,Uttar Pradesh,Ohen,38.34,1962.0,"NRLD_2019 (score=0.60, method=first_word_match)",4247.0,Paisuni,tier3_nearest,15.08
+Rihand Dam,24.2028,83.0061,Uttar Pradesh,Rihand,10600.0,1962.0,"NRLD_2019 (score=1.00, method=first_word_match)",4340.0,Rihand,tier1_existing,0.12820499999999999
+Sarda Sagar Dam,28.7833,80.0897,Uttar Pradesh,Chauba,406.26,1962.0,"NRLD_2019 (score=0.60, method=first_word_match)",4796.0,Sharda,tier3_nearest,2.89
+Silhata Dam,24.6749,83.3409,Uttar Pradesh,Local,1.288,1962.0,"NRLD_2019 (score=0.60, method=first_word_match)",4614.0,Son,tier3_nearest,19.01
+Sukhra Dam,24.7936,82.2722,Uttar Pradesh,Local,1.699,1909.0,"NRLD_2019 (score=0.60, method=first_word_match)",4053.0,Belan,tier3_nearest,4.11
+Nanauti Dam,24.9864,82.7806,Uttar Pradesh,Local,340.28,1963.0,"NRLD_2019 (score=0.60, method=first_word_match)",4038.0,Ganga,tier3_nearest,15.08
+Hinauti Dam,25.0519,82.7875,Uttar Pradesh,Col Nala,6.147,1964.0,"NRLD_2019 (score=0.60, method=first_word_match)",4038.0,Ganga,tier3_nearest,7.82
+Matatila Dam,25.0972,78.3725,Uttar Pradesh,Betwa,1132.0,1958.0,"NRLD_2019 (score=1.00, method=first_word_match)",4159.0,Betwa,tier1_existing,0.041847
+Bhagwan Pur Dam,27.5931,82.4489,Uttar Pradesh,Nakti Nala,9.77,1965.0,"NRLD_2019 (score=0.60, method=first_word_match)",4759.0,Sotwa,tier3_nearest,16.37
+Chandraprabha Dam,24.9317,83.1736,Uttar Pradesh,Chandra Prabha,113.257,1968.0,Wikipedia,3970.0,Karmanasa,tier3_nearest,15.79
+Girgitahi Dam,27.6764,82.32,Uttar Pradesh,Ramsutia Nala,9.25,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",4756.0,Sotwa,tier3_nearest,20.02
+Gularia Dam,25.0781,82.1786,Uttar Pradesh,Gularia Stream,0.33,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",4036.0,Belan,tier3_nearest,12.13
+Keolari Dam,25.3114,79.3672,Uttar Pradesh,Keolari,7.57,1966.0,"NRLD_2019 (score=0.60, method=first_word_match)",4133.0,Dhasan,tier3_nearest,9.1
+Moosakhand Dam,24.9781,83.3008,Uttar Pradesh,Karmnasa,155.771,1967.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,24.36
+Pili Dam,29.3561,78.7914,Uttar Pradesh,Pili,55.3,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",3882.0,Ramganga,tier3_nearest,15.01
+Barwatola Dam,25.1822,80.7942,Uttar Pradesh,Barwa,24.5,1957.0,"NRLD_2019 (score=0.60, method=first_word_match)",4247.0,Paisuni,tier3_nearest,7.47
+Jogendra Dam,24.6089,82.3936,Uttar Pradesh,Jogendra,1.422,1970.0,"NRLD_2019 (score=0.60, method=first_word_match)",4058.0,Son,tier3_nearest,5.12
+Lali Dam,24.7267,82.6131,Uttar Pradesh,Local,0.776,1970.0,"NRLD_2019 (score=0.60, method=first_word_match)",3973.0,Belan,tier3_nearest,5.32
+Obra Dam,24.4394,82.9661,Uttar Pradesh,Rihand,211.05,1970.0,"NRLD_2019 (score=0.60, method=first_word_match)",4340.0,Rihand,tier1_existing,0.13342199999999999
+Rajban Dam,24.5992,83.0372,Uttar Pradesh,Local,0.736,1970.0,"NRLD_2019 (score=0.60, method=first_word_match)",3964.0,Son,tier3_nearest,2.71
+Sarai Garh Dam,24.7664,83.4047,Uttar Pradesh,Local,0.735,1970.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,27.82
+Chandrawal Dam,25.4472,79.8958,Uttar Pradesh,Chandrawal,34.731,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",4266.0,Shyam,tier3_nearest,3.08
+Jamni Dam,24.3697,78.6844,Uttar Pradesh,Jamni,92.49,1973.0,"NRLD_2019 (score=0.60, method=first_word_match)",4163.0,Jamni,tier1_existing,0.76035
+Rampur Pindaria Dam,25.0533,82.5178,Uttar Pradesh,Local,1.212,1958.0,"NRLD_2019 (score=0.60, method=first_word_match)",4038.0,Ganga,tier3_nearest,11.71
+Barkachha Dam,24.9375,82.4261,Uttar Pradesh,Local,1.742,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4055.0,Belan,tier3_nearest,7.71
+Garhwa Dam,25.2131,81.4464,Uttar Pradesh,Garhwa,2.255,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4232.0,Yamuna,tier3_nearest,5.22
+Maro Dam,25.2189,80.9136,Uttar Pradesh,Maro,6.754,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4247.0,Paisuni,tier1_existing,0.368853
+Murta Dam,24.7853,82.6128,Uttar Pradesh,Local,1.042,1975.0,"NRLD_2019 (score=0.60, method=first_word_match)",4051.0,Belan,tier3_nearest,6.7
+Adwa Dam,24.7858,82.3125,Uttar Pradesh,Adwa,88.1,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4053.0,Belan,tier1_existing,0.002664
+Deori Dam,24.705,83.3547,Uttar Pradesh,Local,2.227,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4614.0,Son,tier3_nearest,21.96
+Kargara Dam,24.6083,82.9842,Uttar Pradesh,Local,1.515,1978.0,"NRLD_2019 (score=0.60, method=first_word_match)",4058.0,Son,tier3_nearest,3.66
+Berbeta Dam,25.1086,82.3089,Uttar Pradesh,Bhatwa Nala,30.76,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",4037.0,Ganga,tier3_nearest,8.82
+Chigauri Dam,24.6667,82.8031,Uttar Pradesh,Local,1.535,1979.0,"NRLD_2019 (score=0.60, method=first_word_match)",3973.0,Belan,tier3_nearest,5.33
+Bachara Dam,25.1311,82.0558,Uttar Pradesh,Bachara Nala,7.39,1980.0,"NRLD_2019 (score=0.60, method=first_word_match)",4068.0,Tons,tier3_nearest,5.76
+Khabhwa Dam,24.6647,82.7983,Uttar Pradesh,Local,0.53,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",3973.0,Belan,tier3_nearest,5.38
+Rohini Dam,24.3556,78.7914,Uttar Pradesh,Rohini,12.11,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4163.0,Jamni,tier3_nearest,10.0
+Vijai Pur Dam,25.1239,82.385,Uttar Pradesh,Local,0.559,1983.0,"NRLD_2019 (score=0.60, method=first_word_match)",4035.0,Ganga,tier3_nearest,4.17
+Chittaurgarh Dam,27.5775,82.5997,Uttar Pradesh,Bharushan Nala,424.75,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",4759.0,Sotwa,tier3_nearest,18.7
+Dhekwan Dam,25.1903,78.5406,Uttar Pradesh,Phatidari Nala,9.9,1909.0,"NRLD_2019 (score=0.60, method=first_word_match)",4159.0,Betwa,tier1_existing,0.311577
+Khaprar Dam,25.9932,78.8705,Uttar Pradesh,Khaprar,3.5,1985.0,"NRLD_2019 (score=0.60, method=first_word_match)",3363.0,Pahuj,tier3_nearest,6.87
+Dongari Dam,25.3853,78.4617,Uttar Pradesh,Pahuj,9.92,1986.0,"NRLD_2019 (score=0.60, method=first_word_match)",3458.0,Ghurari,tier3_nearest,11.15
+Meja Dam,24.865,82.3989,Uttar Pradesh,Belan,303.12,1987.0,"NRLD_2019 (score=0.60, method=first_word_match)",4055.0,Belan,tier1_existing,0.323787
+Kuba Khurd Dam,25.0278,82.8106,Uttar Pradesh,Local,1.201,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",4038.0,Ganga,tier3_nearest,10.04
+Narson Dam,24.6211,83.28,Uttar Pradesh,Narson,2.86,1988.0,"NRLD_2019 (score=0.60, method=first_word_match)",3964.0,Son,tier3_nearest,11.1
+Saktesh Garh Dam,24.9814,82.8192,Uttar Pradesh,Local,3.286,1989.0,"NRLD_2019 (score=0.60, method=first_word_match)",4039.0,Ganga,tier3_nearest,12.99
+Semri Dam,24.9322,82.8444,Uttar Pradesh,Local,1.983,1989.0,"NRLD_2019 (score=0.60, method=first_word_match)",4039.0,Ganga,tier3_nearest,14.51
+Rexahawa Dam,24.7986,82.62,Uttar Pradesh,Bakhar,1.7,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4051.0,Belan,tier3_nearest,5.21
+Sajnam Dam,24.5247,78.5919,Uttar Pradesh,Sajnam,83.5,1990.0,"NRLD_2019 (score=0.60, method=first_word_match)",4164.0,Sajnam,tier1_existing,0.020313
+Bajiya Dam,23.9153,83.1258,Uttar Pradesh,Local,1.546,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4618.0,Rihand,tier3_nearest,13.51
+Bakia Dam,23.9122,83.3319,Uttar Pradesh,Local,0.699,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4610.0,Kanhar,tier3_nearest,12.06
+Gointha Dam,25.6081,83.4939,Uttar Pradesh,Local,0.885,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",3947.0,Ganga,tier3_nearest,4.7
+Jharia Dam,24.2031,83.0069,Uttar Pradesh,Local,0.715,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4340.0,Rihand,tier1_existing,0.179709
+Khairatia Dam,24.5861,83.1639,Uttar Pradesh,Local,2.12,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",3964.0,Son,tier1_existing,1.690086
+Lodhighat Dam,24.7853,83.1061,Uttar Pradesh,Local,0.854,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",3973.0,Belan,tier3_nearest,7.79
+Muirpur Dam,24.1103,83.0564,Uttar Pradesh,Local,1.454,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4340.0,Rihand,tier3_nearest,10.56
+Pokhar Dam,24.7683,83.1533,Uttar Pradesh,Local,1.533,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",3973.0,Belan,tier3_nearest,11.31
+Shahjad Dam,24.9486,78.5214,Uttar Pradesh,Shahjad,130.0,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4160.0,Jamni,tier1_existing,0.10722599999999999
+Tanakpur Dam,29.0556,80.1208,Uttar Pradesh,Sarda,10.286,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4798.0,Mahakali,tier1_existing,0.081141
+Urmil Dam,25.1311,79.7019,Uttar Pradesh,Urmil,86.157,1994.0,"NRLD_2019 (score=0.60, method=first_word_match)",4140.0,Urmal,tier1_existing,0.068043
+Gunta Dam,25.2233,81.1425,Uttar Pradesh,Gunta Nala,28.8,2003.0,"NRLD_2019 (score=0.60, method=first_word_match)",4256.0,Yamuna,tier3_nearest,7.36
+Maudaha Dam,25.5886,79.7078,Uttar Pradesh,Birma,200.0,2003.0,"NRLD_2019 (score=0.60, method=first_word_match)",4109.0,Betwa,tier1_existing,0.193584
+Virat Sagar Dam,25.3069,79.9469,Uttar Pradesh,Dhasan,,1550.0,"NRLD_2019 (score=0.60, method=first_word_match)",4258.0,Ken,tier3_nearest,13.71
+Ghoghwa Dam,27.7939,82.1378,Uttar Pradesh,Local,3.596,,Not found,4750.0,Rapti,tier3_nearest,17.99
+Jamathua Dam,25.0528,82.5222,Uttar Pradesh,Jamathua Nala,2.125,,Not found,4038.0,Ganga,tier3_nearest,11.68
+Kanhar Dam,24.1225,83.2967,Uttar Pradesh,Kanhar,323.45,1981.0,Wikipedia,4611.0,Kanhar,tier1_existing,0.002664
+Newari Dam,24.6514,83.3067,Uttar Pradesh,Local,1.25,,Not found,3964.0,Son,tier3_nearest,14.48
+Pathrai Dam,25.4236,79.0278,Uttar Pradesh,Pathrai,123.77,2002.0,"NRLD_2019 (score=0.60, method=first_word_match)",4137.0,Lakheri,tier3_nearest,9.12
+Patkhauli Dam,26.9619,82.6278,Uttar Pradesh,Ghataprabha,163.0,,Not found,4766.0,Manorama,tier3_nearest,15.92
+Rajghat Dam,24.7628,78.2342,Uttar Pradesh,Betwa,2172.0,2000.0,"NRLD_2019 (score=0.60, method=first_word_match)",4157.0,Betwa,tier1_existing,0.175269
+Rasin Dam,25.1706,80.6681,Uttar Pradesh,Ban Ganga,16.23,,Not found,4093.0,Baghain,tier3_nearest,6.48
+Sapehara Dam,24.9953,82.6067,Uttar Pradesh,Local,7.932,1620.0,"NRLD_2019 (score=0.60, method=first_word_match)",4051.0,Belan,tier3_nearest,15.27
+Balui Dam,24.5435,83.1261,Uttar Pradesh,Local,6.034,,Not found,3964.0,Son,tier3_nearest,7.29
+Banjari Kalan Dam,24.8197,82.2136,Uttar Pradesh,Local,1.105,,Not found,4054.0,Belan,tier3_nearest,6.03
+Khirihata Dam,24.1161,82.6981,Uttar Pradesh,Local,2.12,1992.0,"NRLD_2019 (score=0.60, method=first_word_match)",4622.0,Rihand,tier3_nearest,9.97
+Sijar Dam,25.4269,78.505,Uttar Pradesh,Sijar,55.85,1900.0,"NRLD_2019 (score=0.60, method=first_word_match)",3459.0,Pahuj,tier3_nearest,5.41
+Suswar Dam,24.8156,82.36,Uttar Pradesh,Local,3.03,,Not found,4054.0,Belan,tier3_nearest,2.08
+Tumaria Dam,29.3067,78.9194,Uttarakhand,Dhela,91.05,1961.0,"NRLD_2019 (score=1.00, method=first_word_match)",3884.0,Dhela,tier2_river_name,8.06
+Nanak Sagar Dam,28.9389,79.8372,Uttarakhand,Deoha,209.0,1962.0,"NRLD_2019 (score=0.60, method=first_word_match)",3839.0,Deoha,tier1_existing,0.8691300000000001
+Bour Dam,29.1322,79.26,Uttarakhand,Baur Kakrala,103.368,1967.0,"NRLD_2019 (score=1.00, method=first_word_match)",3849.0,Bhakra,tier3_nearest,6.07
+Baigul Dam,28.8831,79.6308,Uttarakhand,Baigul,70.725,1968.0,"NRLD_2019 (score=0.60, method=first_word_match)",3860.0,Gaula,tier3_nearest,3.0
+Tumria Extension Dam,29.3067,78.9194,Uttarakhand,Phika,80.82,1969.0,Wikipedia,3884.0,Dhela,tier3_nearest,8.06
+Ichari Dam,30.6139,77.7911,Uttarakhand,Yamuna,8.93,1972.0,"NRLD_2019 (score=1.00, method=first_word_match)",3319.0,Tons,tier1_existing,0.075813
+Ram Ganga Dam,29.5203,78.7597,Uttarakhand,Ram Ganga,244.96,1974.0,"NRLD_2019 (score=0.60, method=first_word_match)",3882.0,Ramganga,tier1_existing,0.10545
+Ram Ganga Saddle Dam,29.5203,78.7597,Uttarakhand,Chuisot,,1974.0,"NRLD_2019 (score=0.60, method=first_word_match)",3882.0,Ramganga,tier1_existing,0.10545
+Haripura Dam,29.1231,79.3186,Uttarakhand,Bhakhara Khazia,28.32,1975.0,"NRLD_2019 (score=1.00, method=first_word_match)",3849.0,Bhakra,tier1_existing,1.9628130000000001
+Maneri Stage I Dam,30.7392,78.5286,Uttarakhand,Bhagirathi,0.6,1984.0,"NRLD_2019 (score=0.50, method=first_word_match)",3323.0,Bhagirathi,tier1_existing,0.041847
+Jamrani Phase I Dam,29.2669,79.6161,Uttarakhand,Gola,206.6,1990.0,"NRLD_2019 (score=0.54, method=first_word_match)",3842.0,Gaula,tier1_existing,0.016649999999999998
+Tehri Dam,30.3786,78.48,Uttarakhand,Bhagirathi,3540.0,2006.0,"NRLD_2019 (score=0.56, method=first_word_match)",4205.0,Bhagirathi,tier1_existing,0.10989
+"Vishnuprayag
+ (Jaypee) Dam",30.5628,79.5756,Uttarakhand,Alaknanda,0.148,2006.0,"NRLD_2019 (score=0.63, method=name_similarity)",4237.0,Dhauli Ganga,tier1_existing,0.125541
+Koteshwar Hep Dam,30.2603,78.4975,Uttarakhand,Bhagirathi,88.9,2011.0,"NRLD_2019 (score=0.56, method=name_similarity)",4205.0,Bhagirathi,tier1_existing,0.041847
+Lakhwar (Ujvn) Dam,30.5208,77.9144,Uttarakhand,Yamuna,580.0,2024.0,Wikipedia,3320.0,Yamuna,tier1_existing,0.11288699999999999
+Srinagar Dam,30.2403,78.8319,Uttarakhand,Alaknanda,78.0,2014.0,"NRLD_2019 (score=1.00, method=first_word_match)",4212.0,Alaknanda,tier1_existing,0.08891099999999999
+Vyasi (Ujvn) Dam,30.5244,77.8856,Uttarakhand,Yamuna,13.69,,Not found,3320.0,Yamuna,tier1_existing,0.094239
+Lata Tapovan (Ntpc) Dam,30.4942,79.6275,Uttarakhand,Dhauliganga,1.54,2023.0,Wikipedia,4237.0,Dhauli Ganga,tier1_existing,0.042512999999999995
+Dhauliganga Dam,29.9783,80.5719,Uttarakhand,Dhauliganga,6.2,2005.0,Wikipedia,4803.0,Darma Yankti,tier1_existing,0.11510699999999999
+Tanakpur Barrage Dam,29.0583,80.125,Uttarakhand,Sarda,3.15,1992.0,Wikipedia,4798.0,Mahakali,tier1_existing,0.327561
+Bogudiyaar Sirkari Bhyol Dam,30.3086,80.2078,Uttarakhand,Goriganga,1.22,2012.0,Wikipedia,4806.0,Goriganga,tier1_existing,1.1895870000000002
+Phata Bhyung Dam,30.6239,78.9997,Uttarakhand,Mandakini,0.05,2012.0,Wikipedia,4208.0,Mandakini,tier1_existing,1.237428
+Rambara Dam,30.6947,79.0556,Uttarakhand,Mandakini,0.074,2013.0,Wikipedia,4208.0,Mandakini,tier2_river_name,9.02
+Vishnu Gad Pipalkoti Hep Dam,30.5139,79.4917,Uttarakhand,Alaknanda,363.0,2019.0,Wikipedia,4240.0,Alaknanda,tier1_existing,1.3316670000000002
+Massanjore Dam,24.1072,87.3086,West Bengal,Mayurakshi,617.0,1955.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,73.05
+Hinglow Dam,23.8221,87.1934,West Bengal,Hinglow,17.069,1976.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,94.52
+Nachan Dam,23.6173,87.3215,West Bengal,Nachankandar,0.961,1977.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,120.65
+Bara Mandira Dam,23.8329,86.9544,West Bengal,Baramandira,1.419,1977.0,"NRLD_2019 (score=0.60, method=first_word_match)",,,unassigned,86.33
+Bajrag Garh Dam,23.9792,74.8733,Rajasthan,Sivani,2.01,2006.0,"NRLD_2019 (score=0.60, method=first_word_match)",3638.0,Sau,tier3_nearest,6.3
