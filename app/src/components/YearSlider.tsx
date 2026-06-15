@@ -2,14 +2,16 @@ export type YearSliderProps = {
   years: number[]
   value: number
   onChange: (year: number) => void
+  worstYears?: number[]
 }
 
-function YearSlider({ years, value, onChange }: YearSliderProps) {
+function YearSlider({ years, value, onChange, worstYears = [] }: YearSliderProps) {
   if (years.length < 2) return null
 
   const minYear = years[0]
   const maxYear = years[years.length - 1]
   const range = maxYear - minYear
+  const worstSet = new Set(worstYears)
 
   return (
     <div style={{ padding: '4px 0 8px' }}>
@@ -40,6 +42,7 @@ function YearSlider({ years, value, onChange }: YearSliderProps) {
         {years.map((y) => {
           const pct = ((y - minYear) / range) * 100
           const isDecade = y % 10 === 0
+          const isWorst = worstSet.has(y)
           return (
             <div
               key={y}
@@ -52,11 +55,23 @@ function YearSlider({ years, value, onChange }: YearSliderProps) {
                 alignItems: 'center',
               }}
             >
+              {isWorst && (
+                <div
+                  style={{
+                    width: 5,
+                    height: 5,
+                    borderRadius: '50%',
+                    backgroundColor: '#c8503c',
+                    marginBottom: 1,
+                  }}
+                  title={`Drought year: ${y}`}
+                />
+              )}
               <div
                 style={{
                   width: 1,
                   height: isDecade ? 8 : 3,
-                  backgroundColor: isDecade ? '#555' : '#bbb',
+                  backgroundColor: isWorst ? '#c8503c' : isDecade ? '#555' : '#bbb',
                 }}
               />
               {isDecade && (

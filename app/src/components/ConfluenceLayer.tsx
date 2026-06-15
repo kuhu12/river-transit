@@ -1,4 +1,4 @@
-import type { SchematicConfluence } from './schematicMapUtils'
+import type { SchematicConfluence } from '../types'
 
 type ConfluenceLayerProps = {
   confluences: SchematicConfluence[]

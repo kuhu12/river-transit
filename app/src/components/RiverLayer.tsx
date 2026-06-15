@@ -1,50 +1,47 @@
-import type { SchematicLine } from './schematicMapUtils'
-
-const LABEL_OFFSET = 10
+import type { SchematicLine, MotionType } from '../types'
 
 export type RiverLayerProps = {
   lines: SchematicLine[]
   width: number
   height: number
+  motionType?: MotionType
 }
 
-function RiverLayer({ lines, width, height }: RiverLayerProps) {
-  // console.log("Lines", lines)
+const dashKeyframes = `
+@keyframes dashFlow {
+  to { stroke-dashoffset: -40; }
+}
+`
+
+function RiverLayer({ lines, width, height, motionType = 'none' }: RiverLayerProps) {
+  const useDash = motionType === 'dash'
+
   return (
     <g>
-      {lines.map((line) => (
-        <g key={line.id}>
-          <path
-            d={line.path}
-            fill="none"
-            stroke="#2b8cbe"
-            // stroke="url(#riverGradient)"
-            strokeWidth={line.strokeWidth ?? 4}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            // opacity={line.name === 'Ganga' ? 1 : 0}
-          />
-          {/* {line.labelPosition && (
-            <text
-              x={line.labelPosition.x}
-              y={line.labelPosition.y}
-              fontSize={12}
-              fill="#2c3e50"
-              fontWeight="600"
-              textAnchor="middle"
-            >
-              {line.name}
-            </text>
-          )} */}
-        </g>
-      ))}
-      {/* <g>
-        {lines.map((line) =>
-          line.ticks.map((tick) => (
-            <circle key={`${line.id}-${tick.id}`} cx={tick.x} cy={tick.y} r={2.8} fill="#fff" stroke="#2b8cbe" strokeWidth={1.2} />
-          )),
-        )}
-      </g> */}
+      {useDash && <style>{dashKeyframes}</style>}
+      {lines.map((line) => {
+        const sw = line.strokeWidth ?? 1
+        const color = line.strokeColor ?? '#2b8cbe'
+        const flow = line.flow ?? 1
+        const duration = Math.max(0.3, 3 / Math.sqrt(Math.max(flow, 0.1)))
+
+        return (
+          <g key={line.id}>
+            <path
+              d={line.path}
+              fill="none"
+              stroke={color}
+              strokeWidth={sw}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              {...(useDash ? {
+                strokeDasharray: `${Math.max(4, sw * 2)},${Math.max(6, sw * 3)}`,
+                style: { animation: `dashFlow ${duration.toFixed(2)}s linear infinite` },
+              } : {})}
+            />
+          </g>
+        )
+      })}
     </g>
   )
 }

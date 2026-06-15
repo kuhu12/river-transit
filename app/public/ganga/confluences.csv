@@ -1,34 +1,34 @@
-river_name,confluences_into,confluence_lat,confluence_lon,outlet_seg_id,place_name
-Ganga,Bay of Bengal,24.7429,87.9362,2959,Farakka
-Alaknanda,Bhagirathi,30.1446,78.5988,4212,Devprayag
-Bhagirathi,Ganga,30.1446,78.5988,4203,Devprayag
-Mandakini,Alaknanda,30.2879,78.9796,4211,Rudraprayag
-Burhi Gandak,Ganga,25.3221,86.3712,4901,Supaul
-Gandak,Ganga,25.6271,85.1846,4577,Hajipur
-Ghaghara,Ganga,25.7438,84.6638,4401,Chhapra
-Gomti,Ganga,25.4946,83.5179,3932,Ghazipur
-Ramganga,Ganga,27.1512,79.9071,3864,Kannauj
-Rapti,Ghaghara,26.6029,83.0237,4456,Barhaj
-Sarju,Ghaghara,26.8104,82.1738,4812,Ayodhya
-Bagmati,Ganga,26.0404,85.8829,4880,Rosera
-Kamala,Kosi,26.1158,86.7654,4934,Supaul
-Kosi,Ganga,25.4412,87.2204,3872,Kursela
-Mahananda,Ganga,24.9563,88.2304,5081,Malda
-Mechi,Mahananda,26.4121,88.1779,4846,Siliguri
-Betwa,Yamuna,25.9213,80.2313,4121,Hamirpur
-Chambal,Yamuna,26.0483,79.2258,3336,Etawah
-Ken,Yamuna,25.6542,80.4875,4281,Banda
-Son,Ganga,25.6575,84.4425,4341,Koilwar
-Tons,Yamuna,30.5079,77.8196,4067,Kalsi
-Yamuna,Ganga,25.4204,81.8879,4254,Prayagraj
-Hindon,Yamuna,28.5154,77.6317,3559,Ghaziabad
-Kali Sindh,Chambal,25.1246,76.1971,3627,Anta
-Karmanasa,Ganga,25.3971,83.7854,3962,Chandauli
-North Koel,Son,24.0771,84.1321,4565,Medininagar
-Punpun,Ganga,25.4912,85.1929,5170,Masaurhi
-Sharda,Ghaghara,28.0875,80.7533,4777,Lakhimpur
-Sindh,Yamuna,26.4187,79.1571,3390,Mainpuri
-Gaula,Ramganga,29.0317,78.9392,3861,Kalagarh
-Gerua,Gandak,26.4908,84.3058,5111,Gopalganj
-Rihand,Son,24.2329,82.6592,4340,Singrauli
-Rohini,Rapti,26.8354,83.3221,4448,Gorakhpur
+river_name,confluences_into,place_name,confluence_lon,confluence_lat,outlet_seg_id,dist_m
+Bhagirathi,Ganga,Devprayag,78.6026,30.1441,4205,374
+Alaknanda,Ganga,Devprayag,78.6026,30.1441,4212,374
+Mandakini,Alaknanda,Rudraprayag,78.9817,30.2847,4211,411
+Yamuna,Ganga,Prayagraj,81.8847,25.4304,4044,1156
+Tons,Yamuna,Prayagraj,81.88,25.425,4068,26968
+Chambal,Yamuna,Etawah,79.0163,26.58,3339,25785
+Betwa,Yamuna,Hamirpur,80.1437,25.949,4113,9283
+Ken,Yamuna,Banda,80.3521,25.5133,4258,23800
+Sindh,Yamuna,Mainpuri,79.25,26.4,3390,5364
+Hindon,Yamuna,Ghaziabad,77.7,28.7,3534,34450
+Kali Sindh,Chambal,Anta,76.37,25.15,3569,17634
+Gomti,Ganga,Ghazipur,83.5804,25.5772,3932,42029
+Ghaghara,Ganga,Chhapra,84.7467,25.7789,4405,9180
+Sharda,Ghaghara,Brahmaghat,81.35,27.95,4777,31202
+Sarju,Ghaghara,Ayodhya,82.1964,26.7847,4757,30834
+Rapti,Ghaghara,Barhaj,83.7283,26.3083,4417,6085
+Rohini,Rapti,Gorakhpur,83.37,26.78,4448,4763
+Ramganga,Ganga,Kannauj,79.908,27.0551,3799,14254
+Gaula,Ramganga,Kalagarh,78.98,29.5,3842,71998
+Son,Ganga,Koilwar,84.7739,25.5633,4411,20617
+Rihand,Son,Singrauli,82.75,24.2,4340,14701
+Koel,Son,Medininagar,84.075,23.9,4590,8645
+Gandak,Ganga,Hajipur,85.2167,25.694,4573,8107
+Bagmati,Ganga,Rosera,85.9975,25.8689,4872,22248
+Burhi Gandak,Ganga,Rosera,86.0,25.87,4881,33656
+Kosi,Ganga,Kursela,87.2204,25.4412,4860,6
+Kamala,Kosi,Supaul,86.6,26.12,4875,23055
+Mechi,Mahananda,Siliguri,88.135,26.6117,4842,4
+Mahananda,Ganga,Manikchak,87.9197,25.1687,5081,19905
+Karmanasa,Ganga,Chandauli,83.8667,25.2833,4729,8797
+Punpun,Ganga,Masaurhi,85.07,25.555,4540,13083
+Hooghly,Bay of Bengal,Sagar Island,88.05,21.65,5083,325339
+Padma,Bay of Bengal,Meghna mouth,90.6,22.3,3661,70135
